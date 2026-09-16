@@ -52,7 +52,7 @@ text never leaves the browser except citation strings sent as read-only registry
 - Live app: https://rudra496.github.io/citewarden/
 - Repo: https://github.com/rudra496/citewarden
 - Evidence & provenance log: https://github.com/rudra496/citewarden/blob/main/docs/EVIDENCE.md
-- Demo video: (2–3 min — to be recorded and uploaded to YouTube/file)
+- Demo video: video/CiteWarden_LexHack_Demo.mp4 (2:04, 4.5 MB, English narration + burned captions) — upload to YouTube (unlisted) or attach
 
 ## Judging-criteria mapping (LexHack rubric)
 - Real-World Impact & Feasibility (25%): attacks the single most documented AI-in-law failure mode;
