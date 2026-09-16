@@ -91,7 +91,7 @@ export function extractCitations(text) {
   }
 
   for (const m of matchAll(RX.ukAct, text)) {
-    const name = m[1].trim();
+    let name = m[1].trim().replace(/^(The|A)\s+/i, ""); // leading articles aren't part of short titles
     if (UK_ACT_FALSE_POSITIVES.has(name.toLowerCase())) continue;
     push({ type: "ukAct", raw: m[0].trim(), key: `uk:${name}:${m[3]}`.toLowerCase(), index: m.index, name, year: Number(m[3]), kind: m[2] });
   }
