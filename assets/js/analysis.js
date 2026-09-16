@@ -22,7 +22,7 @@ async function verifyOne(c) {
     case "cfr":
       return verifyCfr(c.title, c.section);
     case "ukAct": {
-      const known = findUKAct(c.name, c.year);
+      const known = findUKAct(c.name, c.year, c.kind);
       if (known) return verifyUKAct(c.name, c.year, known.url);
       return { verdict: "amber", reason: "Well-formed act citation; not in the verified statute list." };
     }

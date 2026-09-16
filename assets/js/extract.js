@@ -9,7 +9,7 @@ const RX = {
   cfr: /\b(\d{1,3})\s*C\.?\s*F\.?\s*R\.?\s*(?:§+\s*)?((?:\d+)(?:\.\d+)*)/g,
   usc: /\b(\d{1,2})\s*U\.?\s*S\.?\s*C\.?\s*(?:§+\s*)?((?:\d+)(?:\-\d+)?(?:\([a-z0-9]+\))*)/g,
   reporter: /\b(\d{1,4})\s+(U\.S\.|F\.3d|F\.2d|F\.|S\.\s?Ct\.|F\.\s?Supp\.(?:\s?2d|\s?3d)?)\s+(\d{1,5})\s*(?:\((\d{4})\))?/g,
-  caseName: /\b([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,4})\s+v(?:s)?\.\s+([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,4})/g,
+  caseName: /\b([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|re|[A-Z])[A-Za-z.'\u2019-]*){0,4})\s+v(?:s)?\.\s+([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|re|[A-Z])[A-Za-z.'\u2019-]*){0,4})/g,
   ukAct: /\b([A-Z][A-Za-z'()&.-]+(?:\s+[A-Z][A-Za-z'()&.-]+){0,7})\s+(Act|Order|Regulations|Rules|Measure)\s+(\d{4})\b/g,
   euReg: /\bRegulation\s*\((EU|EC)\)\s*(\d{4})\/(\d{1,5})/g,
   euDirective: /\bDirective\s*(\d{2,4})\/(\d{1,3})\/(EC|EU)/g,
@@ -63,14 +63,30 @@ export function extractCitations(text) {
   }
 
   // Case names — skip ones that overlap a reporter cite (Roe v. Wade, 410 U.S. 113)
+  const LEAD_CONTEXT = /^(?:in|see|but|and|accord|cf|also|citing|quoted|similarly|further|moreover|eg|e\.g)[.,]?\s+/i;
   const caseSpans = [];
   for (const m of matchAll(RX.caseName, text)) {
-    const claimant = m[1].trim(), defendant = m[2].trim();
+    let claimant = m[1].trim(), defendant = m[2].trim();
+    let start = m.index;
+    // The greedy continuation can swallow leading context ("In Varghese v. …",
+    // "Similarly, Shaboon v. …"); peel it off and re-anchor the raw span at
+    // the real party name. "In re …" captions are legitimate and stay intact.
+    if (
+      LEAD_CONTEXT.test(claimant) &&
+      !/^in\s+re\b/i.test(claimant)
+    ) {
+      const stripped = claimant.replace(LEAD_CONTEXT, "").trim();
+      if (stripped && !STOP_WORDS_CASES.has(stripped.split(/\s+/)[0].toLowerCase())) {
+        const idx = m[0].indexOf(stripped);
+        start = idx >= 0 ? m.index + idx : m.index;
+        claimant = stripped;
+      }
+    }
     if (STOP_WORDS_CASES.has(claimant.toLowerCase()) || STOP_WORDS_CASES.has(defendant.toLowerCase())) continue;
-    caseSpans.push([m.index, m.index + m[0].length]);
+    caseSpans.push([start, m.index + m[0].length]);
     push({
-      type: "caseName", raw: m[0].trim(), key: `name:${claimant}:v:${defendant}`.toLowerCase(),
-      index: m.index, claimant, defendant,
+      type: "caseName", raw: `${claimant} v. ${defendant}`, key: `name:${claimant}:v:${defendant}`.toLowerCase(),
+      index: start, claimant, defendant,
     });
   }
 

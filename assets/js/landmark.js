@@ -116,12 +116,14 @@ export function matchKnownFabricated(claimant, defendant) {
   );
 }
 
-export function findUKAct(name, year) {
+export function findUKAct(name, year, kind) {
   if (!_ukEu) return null;
   const n = norm(name);
+  const withKind = (a) => norm(`${a.name} ${kind || "Act"}`);
   return (
     _ukEu.uk.find((a) => norm(a.name) === n && a.year === year) ||
     _ukEu.uk.find((a) => norm(a.name) === n) ||
+    _ukEu.uk.find((a) => withKind(a) === n) ||
     null
   );
 }

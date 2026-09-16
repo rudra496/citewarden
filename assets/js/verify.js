@@ -64,7 +64,9 @@ export async function verifyArxiv(id) {
   }
   return {
     verdict: "amber",
-    reason: "No OpenAlex record for this arXiv ID (very new submissions may lag); format is valid.",
+    reason:
+      "No OpenAlex record for this arXiv ID; arXiv's own API lacks browser CORS so a live pull is not possible offline. Verify manually:",
+    evidence: { url: `https://arxiv.org/abs/${id}` },
   };
 }
 
@@ -85,31 +87,54 @@ export async function verifyPmid(id) {
   return { verdict: "amber", reason: "PubMed unreachable; format is valid." };
 }
 
-// --- CFR section → eCFR structure API ---
+// --- CFR section → eCFR versioner API ---
+// Root of the structure payload IS the tree node ({type, identifier, children}).
+function structureHasPart(node, ident) {
+  if (Array.isArray(node)) return node.some((n) => structureHasPart(n, ident));
+  if (!node || typeof node !== "object") return false;
+  if (node.type === "part" && String(node.identifier) === ident) return true;
+  return Array.isArray(node.children) && node.children.some((n) => structureHasPart(n, ident));
+}
+
+const cfrDateCache = null;
+
 export async function verifyCfr(title, section) {
-  const top = section.split(".")[0];
-  const date = "current";
-  // existence check: the versioner structure endpoint for the title contains part lists
-  const r = await fetchJson(
-    `https://www.ecfr.gov/api/versioner/v1/structure/${date}/title-${title}.json?level=part`
-  );
-  if (r.ok && r.data?.structure) {
-    const flat = JSON.stringify(r.data.structure);
-    const partRe = new RegExp(`"type":"part"[^}]*?"identifier":"${top}"`);
-    if (partRe.test(flat)) {
+  const t = Number(title);
+  if (!(t >= 1 && t <= 54)) {
+    return { verdict: "red", reason: `CFR title ${title} does not exist (titles run 1–54).` };
+  }
+  if (!/^\d+(\.\d+)*$/.test(section)) {
+    return { verdict: "red", reason: `CFR section "${section}" is malformed.` };
+  }
+  // 1) resolve the title's latest coverage date
+  const titles = await fetchJson("https://www.ecfr.gov/api/versioner/v1/titles.json");
+  let date = null;
+  if (titles.ok && Array.isArray(titles.data?.titles)) {
+    const row = titles.data.titles.find((x) => Number(x.number) === t);
+    if (row?.up_to_date_as_of) date = row.up_to_date_as_of;
+    if (row?.reserved) {
+      return { verdict: "red", reason: `CFR title ${title} is reserved (does not exist).` };
+    }
+  }
+  if (!date) return { verdict: "amber", reason: "eCFR unreachable; format is valid." };
+  // 2) walk the structure tree for the part
+  const r = await fetchJson(`https://www.ecfr.gov/api/versioner/v1/structure/${date}/title-${t}.json`);
+  if (r.ok && r.data) {
+    const top = section.split(".")[0];
+    if (structureHasPart(r.data, top)) {
       return {
         verdict: "green",
-        reason: `CFR title ${title} part ${top} exists in the current eCFR (official gov text).`,
-        evidence: { url: `https://www.ecfr.gov/current/title-${title}/part-${top}` },
+        reason: `CFR title ${t} part ${top} exists in the official eCFR (current as of ${date}).`,
+        evidence: { url: `https://www.ecfr.gov/current/title-${t}/part-${top}` },
       };
     }
     return {
       verdict: "red",
-      reason: `CFR title ${title} exists but has no part ${top} in the current edition.`,
+      reason: `CFR title ${t} exists but has no part ${top} in the official edition of ${date}.`,
     };
   }
   if (r.status === 404) {
-    return { verdict: "red", reason: `CFR title ${title} does not exist in the current eCFR.` };
+    return { verdict: "red", reason: `CFR title ${t} does not exist in the eCFR.` };
   }
   return { verdict: "amber", reason: "eCFR unreachable; format is valid." };
 }
