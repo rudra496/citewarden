@@ -86,7 +86,13 @@
 
   <section class="split">
     <article id="about">
-      <h3>How the forensics work</h3>
+      <h3>How it works — with no backend</h3>
+      <p class="fineprint" style="margin-top:0">The registries <b>are</b> the backend. CiteWarden runs no server, no AI model,
+      and pays nothing per check — it queries the same free public databases that publish the records in the first place:
+      <b>Crossref</b> (the DOI registration agency, ~160M records), <b>PubMed</b> (the US National Library of Medicine),
+      <b>eCFR</b> (the official US regulations text), <b>OpenAlex</b>, and <b>CourtListener</b> (optional token).
+      A DOI either resolves on Crossref (HTTP 200) or it does not (404). That is not an opinion — it is a fact
+      returned by the authority that mints DOIs.</p>
       <ol>
         <li><b>Extract</b> — 10 citation families recognized: DOIs, arXiv IDs, PMIDs, U.S. Code, CFR,
         federal reporter cites, case names, UK acts, EU regulations &amp; directives.</li>
@@ -98,6 +104,17 @@
         decision years that contradict the volume era, and a documented fabrication watchlist.</li>
         <li><b>Score</b> — a transparent integrity score with a per-citation evidence trail. No black box.</li>
       </ol>
+      <h3>Why it can't hallucinate a verdict</h3>
+      <p class="fineprint">There is <b>no AI in the decision loop</b>. Parsing is deterministic regex.
+      Verification is an HTTP status code from the authoritative registry. Forensics is arithmetic
+      (volume 700 of U.S. Reports does not exist — that is arithmetic, not opinion). Deterministic code
+      cannot invent a case out of nothing the way a language model can.</p>
+      <p class="fineprint"><b>Where it CAN go wrong — stated plainly:</b> it can <i>miss</i> an unusual
+      citation format (a gap, not a false claim); a registry outage downgrades to "unverifiable", never
+      to "fake"; and the fabrication watchlist flags by court record — every red card shows its exact
+      reason and a source link so a human arbitrates. Amber exists precisely because "I don't know"
+      beats a confident wrong answer. The whole engine is covered by 22 automated tests plus a live
+      self-audit panel (top right) that re-proves its accuracy in your browser on every load.</p>
     </article>
     <article id="mata">
       <h3>The case study: <i>Mata v. Avianca</i></h3>
