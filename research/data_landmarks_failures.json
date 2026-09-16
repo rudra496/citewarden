@@ -1,0 +1,604 @@
+[
+ {
+  "name": "Roe v. Wade",
+  "vol": 410,
+  "page": 113,
+  "year": 1973,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Doe v. Bolton",
+  "vol": 410,
+  "page": 179,
+  "year": 1973,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "New York Times Co. v. Sullivan",
+  "vol": 376,
+  "page": 254,
+  "year": 1964,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Brown v. Board of Education",
+  "vol": 347,
+  "page": 483,
+  "year": 1954,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Plessy v. Ferguson",
+  "vol": 163,
+  "page": 537,
+  "year": 1896,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Miranda v. Arizona",
+  "vol": 384,
+  "page": 436,
+  "year": 1966,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Mapp v. Ohio",
+  "vol": 367,
+  "page": 643,
+  "year": 1963,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Baker v. Carr",
+  "vol": 369,
+  "page": 186,
+  "year": 1962,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "United States v. Nixon",
+  "vol": 418,
+  "page": 683,
+  "year": 1974,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Hustler Magazine, Inc. v. Falwell",
+  "vol": 485,
+  "page": 46,
+  "year": 1988,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Romer v. Evans",
+  "vol": 517,
+  "page": 620,
+  "year": 1996,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Lawrence v. Texas",
+  "vol": 539,
+  "page": 558,
+  "year": 2003,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Obergefell v. Hodges",
+  "vol": 576,
+  "page": 644,
+  "year": 2015,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Dobbs v. Jackson Women's Health Organization",
+  "vol": 597,
+  "page": 215,
+  "year": 2022,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Masterpiece Cakeshop, Ltd. v. Colorado Civil Rights Commission",
+  "vol": 584,
+  "page": 617,
+  "year": 2018,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Timbs v. Indiana",
+  "vol": 586,
+  "page": 146,
+  "year": 2019,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Trump v. United States",
+  "vol": 603,
+  "page": 593,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Whole Woman's Health v. Hellerstedt",
+  "vol": 579,
+  "page": 582,
+  "year": 2016,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Regents of the University of California v. Bakke",
+  "vol": 438,
+  "page": 265,
+  "year": 1978,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Gideon v. Wainwright",
+  "vol": 372,
+  "page": 335,
+  "year": 1963,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Griswold v. Connecticut",
+  "vol": 381,
+  "page": 479,
+  "year": 1965,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Tinker v. Des Moines Independent Community School District",
+  "vol": 393,
+  "page": 503,
+  "year": 1969,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Brandenburg v. Ohio",
+  "vol": 395,
+  "page": 444,
+  "year": 1969,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Terry v. Ohio",
+  "vol": 392,
+  "page": 1,
+  "year": 1968,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Katz v. United States",
+  "vol": 389,
+  "page": 347,
+  "year": 1967,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Marbury v. Madison",
+  "vol": 5,
+  "page": 137,
+  "year": 1803,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "McCulloch v. Maryland",
+  "vol": 17,
+  "page": 316,
+  "year": 1819,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Gibbons v. Ogden",
+  "vol": 22,
+  "page": 1,
+  "year": 1824,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Dred Scott v. Sandford",
+  "vol": 60,
+  "page": 393,
+  "year": 1857,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Schenck v. United States",
+  "vol": 249,
+  "page": 47,
+  "year": 1919,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Wickard v. Filburn",
+  "vol": 317,
+  "page": 111,
+  "year": 1942,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Mapp",
+  "vol": 367,
+  "page": 643,
+  "year": 1963,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Engel v. Vitale",
+  "vol": 370,
+  "page": 421,
+  "year": 1962,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Lemon v. Kurtzman",
+  "vol": 403,
+  "page": 602,
+  "year": 1971,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Miller v. California",
+  "vol": 413,
+  "page": 15,
+  "year": 1973,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Texas v. Johnson",
+  "vol": 491,
+  "page": 397,
+  "year": 1989,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+  "vol": 505,
+  "page": 833,
+  "year": 1992,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "United States v. Lopez",
+  "vol": 514,
+  "page": 549,
+  "year": 1995,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Bush v. Gore",
+  "vol": 531,
+  "page": 98,
+  "year": 2000,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Grutter v. Bollinger",
+  "vol": 539,
+  "page": 306,
+  "year": 2003,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "District of Columbia v. Heller",
+  "vol": 554,
+  "page": 570,
+  "year": 2008,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "McDonald v. City of Chicago",
+  "vol": 561,
+  "page": 742,
+  "year": 2010,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Citizens United v. Federal Election Commission",
+  "vol": 558,
+  "page": 310,
+  "year": 2010,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "National Federation of Independent Business v. Sebelius",
+  "vol": 567,
+  "page": 519,
+  "year": 2012,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Shelby County v. Holder",
+  "vol": 570,
+  "page": 529,
+  "year": 2013,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Burwell v. Hobby Lobby Stores",
+  "vol": 573,
+  "page": 682,
+  "year": 2014,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Carpenter v. United States",
+  "vol": 585,
+  "page": 296,
+  "year": 2018,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Bostock v. Clayton County",
+  "vol": 590,
+  "page": 644,
+  "year": 2020,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "New York State Rifle & Pistol Association v. Bruen",
+  "vol": 597,
+  "page": 1,
+  "year": 2022,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Students for Fair Admissions v. President and Fellows of Harvard College",
+  "vol": 600,
+  "page": 181,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "West Virginia v. Environmental Protection Agency",
+  "vol": 597,
+  "page": 697,
+  "year": 2022,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Kennedy v. Bremerton School District",
+  "vol": 597,
+  "page": 507,
+  "year": 2022,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Moore v. Harper",
+  "vol": 600,
+  "page": 1,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Trump v. Anderson",
+  "vol": 601,
+  "page": 286,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "City of Grants Pass v. Johnson",
+  "vol": 603,
+  "page": 275,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "SEC v. Jarkesy",
+  "vol": 603,
+  "page": 242,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Loper Bright Enterprises v. Raimondo",
+  "vol": 603,
+  "page": 369,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Knox v. Service Employees",
+  "vol": 567,
+  "page": 298,
+  "year": 2012,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Crawford v. Marion County Election Board",
+  "vol": 553,
+  "page": 181,
+  "year": 2008,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Shaw v. Reno",
+  "vol": 509,
+  "page": 630,
+  "year": 1993,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Reynolds v. Sims",
+  "vol": 377,
+  "page": 533,
+  "year": 1964,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Wesberry v. Sanders",
+  "vol": 376,
+  "page": 1,
+  "year": 1964,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Heart of Atlanta Motel v. United States",
+  "vol": 379,
+  "page": 241,
+  "year": 1964,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Loving v. Virginia",
+  "vol": 388,
+  "page": 1,
+  "year": 1967,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Reed v. Reed",
+  "vol": 404,
+  "page": 71,
+  "year": 1971,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Frontiero v. Richardson",
+  "vol": 411,
+  "page": 677,
+  "year": 1973,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Craig v. Boren",
+  "vol": 429,
+  "page": 190,
+  "year": 1976,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Mississippi University for Women v. Hogan",
+  "vol": 458,
+  "page": 718,
+  "year": 1982,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "United States v. Virginia",
+  "vol": 518,
+  "page": 515,
+  "year": 1996,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Boy Scouts of America v. Dale",
+  "vol": 530,
+  "page": 640,
+  "year": 2000,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Gonzales v. Raich",
+  "vol": 545,
+  "page": 1,
+  "year": 2005,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Kelo v. City of New London",
+  "vol": 545,
+  "page": 469,
+  "year": 2005,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Riley v. California",
+  "vol": 573,
+  "page": 373,
+  "year": 2014,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Riley v. California (2)",
+  "vol": 573,
+  "page": 373,
+  "year": 2014,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Utah v. Strieff",
+  "vol": 579,
+  "page": 232,
+  "year": 2016,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "County of Riverside v. McLaughlin",
+  "vol": 500,
+  "page": 44,
+  "year": 1991,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "South Dakota v. Wayfair",
+  "vol": 585,
+  "page": 162,
+  "year": 2018,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Janus v. State, County, and Municipal Employees",
+  "vol": 585,
+  "page": 878,
+  "year": 2018,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Espinoza v. Montana Department of Revenue",
+  "vol": 591,
+  "page": 464,
+  "year": 2020,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Carson v. Makin",
+  "vol": 596,
+  "page": 767,
+  "year": 2022,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "303 Creative LLC v. Elenis",
+  "vol": 600,
+  "page": 570,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Gonzalez v. Google LLC",
+  "vol": 598,
+  "page": 617,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Twitter, Inc. v. Taamneh",
+  "vol": 598,
+  "page": 471,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Andy Warhol Foundation for the Visual Arts v. Goldsmith",
+  "vol": 598,
+  "page": 508,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Haaland v. Brackeen",
+  "vol": 599,
+  "page": 255,
+  "year": 2023,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ },
+ {
+  "name": "Muldrow v. City of St. Louis",
+  "vol": 601,
+  "page": 346,
+  "year": 2024,
+  "why": "fetch-failed HTTP Error 403: Forbidden"
+ }
+]

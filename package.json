@@ -1,0 +1,13 @@
+{
+  "name": "citewarden",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "serve": "python -m http.server 8080"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.1"
+  }
+}

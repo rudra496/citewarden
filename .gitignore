@@ -1,0 +1,5 @@
+node_modules/
+research/mata_order.pdf
+research/mata_opinion.pdf
+research/wiki_landmarks_raw.json
+research/*.log

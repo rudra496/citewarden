@@ -1,0 +1,3257 @@
+{
+ "source": "Wikipedia: List of landmark court decisions in the United States",
+ "source_url": "https://en.wikipedia.org/wiki/List_of_landmark_court_decisions_in_the_United_States",
+ "retrieved": "2026-09-16",
+ "checks": "volume bounds 1-605; piecewise era anchors +-4y; year 1751-2026; name non-empty",
+ "count": 464,
+ "cases": [
+  {
+   "name": "Dred Scott v. Sandford",
+   "vol": 60,
+   "page": 393,
+   "year": 1857,
+   "cite": "60 U.S. 393"
+  },
+  {
+   "name": "Strauder v. West Virginia",
+   "vol": 100,
+   "page": 303,
+   "year": 1880,
+   "cite": "100 U.S. 303"
+  },
+  {
+   "name": "Yick Wo v. Hopkins",
+   "vol": 118,
+   "page": 356,
+   "year": 1886,
+   "cite": "118 U.S. 356"
+  },
+  {
+   "name": "Plessy v. Ferguson",
+   "vol": 163,
+   "page": 537,
+   "year": 1896,
+   "cite": "163 U.S. 537"
+  },
+  {
+   "name": "Missouri ex rel. Gaines v. Canada",
+   "vol": 305,
+   "page": 337,
+   "year": 1938,
+   "cite": "305 U.S. 337"
+  },
+  {
+   "name": "Smith v. Allwright",
+   "vol": 321,
+   "page": 649,
+   "year": 1944,
+   "cite": "321 U.S. 649"
+  },
+  {
+   "name": "Steele v. Louisville &amp; Nashville Railway Co.",
+   "vol": 323,
+   "page": 192,
+   "year": 1944,
+   "cite": "323 U.S. 192"
+  },
+  {
+   "name": "Korematsu v. United States",
+   "vol": 323,
+   "page": 214,
+   "year": 1944,
+   "cite": "323 U.S. 214"
+  },
+  {
+   "name": "Morgan v. Virginia",
+   "vol": 328,
+   "page": 373,
+   "year": 1946,
+   "cite": "328 U.S. 373"
+  },
+  {
+   "name": "Shelley v. Kraemer",
+   "vol": 334,
+   "page": 1,
+   "year": 1948,
+   "cite": "334 U.S. 1"
+  },
+  {
+   "name": "Sweatt v. Painter",
+   "vol": 339,
+   "page": 629,
+   "year": 1950,
+   "cite": "339 U.S. 629"
+  },
+  {
+   "name": "Henderson v. United States",
+   "vol": 339,
+   "page": 816,
+   "year": 1950,
+   "cite": "339 U.S. 816"
+  },
+  {
+   "name": "Hernandez v. Texas",
+   "vol": 347,
+   "page": 475,
+   "year": 1954,
+   "cite": "347 U.S. 475"
+  },
+  {
+   "name": "Brown v. Board of Education",
+   "vol": 347,
+   "page": 483,
+   "year": 1954,
+   "cite": "347 U.S. 483"
+  },
+  {
+   "name": "Bolling v. Sharpe",
+   "vol": 347,
+   "page": 497,
+   "year": 1954,
+   "cite": "347 U.S. 497"
+  },
+  {
+   "name": "Gomillion v. Lightfoot",
+   "vol": 364,
+   "page": 339,
+   "year": 1960,
+   "cite": "364 U.S. 339"
+  },
+  {
+   "name": "Boynton v. Virginia",
+   "vol": 364,
+   "page": 454,
+   "year": 1960,
+   "cite": "364 U.S. 454"
+  },
+  {
+   "name": "Garner v. Louisiana",
+   "vol": 368,
+   "page": 157,
+   "year": 1961,
+   "cite": "368 U.S. 157"
+  },
+  {
+   "name": "Loving v. Virginia",
+   "vol": 388,
+   "page": 1,
+   "year": 1967,
+   "cite": "388 U.S. 1"
+  },
+  {
+   "name": "Swann v. Charlotte-Mecklenburg Board of Education",
+   "vol": 402,
+   "page": 1,
+   "year": 1971,
+   "cite": "402 U.S. 1"
+  },
+  {
+   "name": "Griggs v. Duke Power Co.",
+   "vol": 401,
+   "page": 424,
+   "year": 1971,
+   "cite": "401 U.S. 424"
+  },
+  {
+   "name": "Lau v. Nichols",
+   "vol": 414,
+   "page": 563,
+   "year": 1974,
+   "cite": "414 U.S. 563"
+  },
+  {
+   "name": "Runyon v. McCrary",
+   "vol": 427,
+   "page": 160,
+   "year": 1976,
+   "cite": "427 U.S. 160"
+  },
+  {
+   "name": "Regents of the University of California v. Bakke",
+   "vol": 438,
+   "page": 265,
+   "year": 1978,
+   "cite": "438 U.S. 265"
+  },
+  {
+   "name": "Batson v. Kentucky",
+   "vol": 476,
+   "page": 79,
+   "year": 1986,
+   "cite": "476 U.S. 79"
+  },
+  {
+   "name": "Adarand Constructors, Inc. v. Peña",
+   "vol": 515,
+   "page": 200,
+   "year": 1995,
+   "cite": "515 U.S. 200"
+  },
+  {
+   "name": "Gratz v. Bollinger",
+   "vol": 539,
+   "page": 244,
+   "year": 2003,
+   "cite": "539 U.S. 244"
+  },
+  {
+   "name": "Grutter v. Bollinger",
+   "vol": 539,
+   "page": 306,
+   "year": 2003,
+   "cite": "539 U.S. 306"
+  },
+  {
+   "name": "Schuette v. Coalition to Defend Affirmative Action",
+   "vol": 572,
+   "page": 291,
+   "year": 2014,
+   "cite": "572 U.S. 291"
+  },
+  {
+   "name": "Students for Fair Admissions v. Harvard",
+   "vol": 600,
+   "page": 181,
+   "year": 2023,
+   "cite": "600 U.S. 181"
+  },
+  {
+   "name": "Muller v. Oregon",
+   "vol": 208,
+   "page": 412,
+   "year": 1908,
+   "cite": "208 U.S. 412"
+  },
+  {
+   "name": "Glasser v. United States",
+   "vol": 315,
+   "page": 60,
+   "year": 1942,
+   "cite": "315 U.S. 60"
+  },
+  {
+   "name": "Phillips v. Martin Marietta Corp.",
+   "vol": 400,
+   "page": 542,
+   "year": 1971,
+   "cite": "400 U.S. 542"
+  },
+  {
+   "name": "Reed v. Reed",
+   "vol": 404,
+   "page": 71,
+   "year": 1971,
+   "cite": "404 U.S. 71"
+  },
+  {
+   "name": "Stanley v. Illinois",
+   "vol": 405,
+   "page": 645,
+   "year": 1972,
+   "cite": "405 U.S. 645"
+  },
+  {
+   "name": "Frontiero v. Richardson",
+   "vol": 411,
+   "page": 677,
+   "year": 1973,
+   "cite": "411 U.S. 677"
+  },
+  {
+   "name": "Taylor v. Louisiana",
+   "vol": 419,
+   "page": 522,
+   "year": 1975,
+   "cite": "419 U.S. 522"
+  },
+  {
+   "name": "Craig v. Boren",
+   "vol": 429,
+   "page": 190,
+   "year": 1976,
+   "cite": "429 U.S. 190"
+  },
+  {
+   "name": "Mississippi University for Women v. Hogan",
+   "vol": 458,
+   "page": 718,
+   "year": 1982,
+   "cite": "458 U.S. 718"
+  },
+  {
+   "name": "Price Waterhouse v. Hopkins",
+   "vol": 490,
+   "page": 228,
+   "year": 1989,
+   "cite": "490 U.S. 228"
+  },
+  {
+   "name": "J.E.B. v. Alabama ex rel. T.B.",
+   "vol": 511,
+   "page": 127,
+   "year": 1994,
+   "cite": "511 U.S. 127"
+  },
+  {
+   "name": "United States v. Virginia",
+   "vol": 518,
+   "page": 515,
+   "year": 1996,
+   "cite": "518 U.S. 515"
+  },
+  {
+   "name": "Oncale v. Sundowner Offshore Services",
+   "vol": 523,
+   "page": 75,
+   "year": 1998,
+   "cite": "523 U.S. 75"
+  },
+  {
+   "name": "Burlington Northern &amp; Santa Fe Railway Co. v. White",
+   "vol": 548,
+   "page": 53,
+   "year": 2006,
+   "cite": "548 U.S. 53"
+  },
+  {
+   "name": "One, Inc. v. Olesen",
+   "vol": 355,
+   "page": 371,
+   "year": 1958,
+   "cite": "355 U.S. 371"
+  },
+  {
+   "name": "Bowers v. Hardwick",
+   "vol": 478,
+   "page": 186,
+   "year": 1986,
+   "cite": "478 U.S. 186"
+  },
+  {
+   "name": "Romer v. Evans",
+   "vol": 517,
+   "page": 620,
+   "year": 1996,
+   "cite": "517 U.S. 620"
+  },
+  {
+   "name": "Lawrence v. Texas",
+   "vol": 539,
+   "page": 558,
+   "year": 2003,
+   "cite": "539 U.S. 558"
+  },
+  {
+   "name": "United States v. Windsor",
+   "vol": 570,
+   "page": 744,
+   "year": 2013,
+   "cite": "570 U.S. 744"
+  },
+  {
+   "name": "Obergefell v. Hodges",
+   "vol": 576,
+   "page": 644,
+   "year": 2015,
+   "cite": "576 U.S. 644"
+  },
+  {
+   "name": "Bostock v. Clayton County",
+   "vol": 590,
+   "page": 644,
+   "year": 2020,
+   "cite": "590 U.S. 644"
+  },
+  {
+   "name": "Civil Rights Cases",
+   "vol": 109,
+   "page": 3,
+   "year": 1883,
+   "cite": "109 U.S. 3"
+  },
+  {
+   "name": "Heart of Atlanta Motel, Inc. v. United States",
+   "vol": 379,
+   "page": 241,
+   "year": 1964,
+   "cite": "379 U.S. 241"
+  },
+  {
+   "name": "Katzenbach v. McClung",
+   "vol": 379,
+   "page": 294,
+   "year": 1964,
+   "cite": "379 U.S. 294"
+  },
+  {
+   "name": "South Carolina v. Katzenbach",
+   "vol": 383,
+   "page": 301,
+   "year": 1966,
+   "cite": "383 U.S. 301"
+  },
+  {
+   "name": "Katzenbach v. Morgan",
+   "vol": 384,
+   "page": 641,
+   "year": 1966,
+   "cite": "384 U.S. 641"
+  },
+  {
+   "name": "Jones v. Alfred H. Mayer Co.",
+   "vol": 392,
+   "page": 409,
+   "year": 1968,
+   "cite": "392 U.S. 409"
+  },
+  {
+   "name": "City of Boerne v. Flores",
+   "vol": 521,
+   "page": 507,
+   "year": 1997,
+   "cite": "521 U.S. 507"
+  },
+  {
+   "name": "Shelby County v. Holder",
+   "vol": 570,
+   "page": 529,
+   "year": 2013,
+   "cite": "570 U.S. 529"
+  },
+  {
+   "name": "Monroe v. Pape",
+   "vol": 365,
+   "page": 167,
+   "year": 1961,
+   "cite": "365 U.S. 167"
+  },
+  {
+   "name": "Pierson v. Ray",
+   "vol": 386,
+   "page": 547,
+   "year": 1967,
+   "cite": "386 U.S. 547"
+  },
+  {
+   "name": "Stump v. Sparkman",
+   "vol": 435,
+   "page": 349,
+   "year": 1978,
+   "cite": "435 U.S. 349"
+  },
+  {
+   "name": "Will v. Michigan Department of State Police",
+   "vol": 491,
+   "page": 58,
+   "year": 1989,
+   "cite": "491 U.S. 58"
+  },
+  {
+   "name": "Griswold v. Connecticut",
+   "vol": 381,
+   "page": 479,
+   "year": 1965,
+   "cite": "381 U.S. 479"
+  },
+  {
+   "name": "Eisenstadt v. Baird",
+   "vol": 405,
+   "page": 438,
+   "year": 1972,
+   "cite": "405 U.S. 438"
+  },
+  {
+   "name": "Roe v. Wade",
+   "vol": 410,
+   "page": 113,
+   "year": 1973,
+   "cite": "410 U.S. 113"
+  },
+  {
+   "name": "Carey v. Population Services International",
+   "vol": 431,
+   "page": 678,
+   "year": 1977,
+   "cite": "431 U.S. 678"
+  },
+  {
+   "name": "Planned Parenthood v. Casey",
+   "vol": 505,
+   "page": 833,
+   "year": 1992,
+   "cite": "505 U.S. 833"
+  },
+  {
+   "name": "Stenberg v. Carhart",
+   "vol": 530,
+   "page": 914,
+   "year": 2000,
+   "cite": "530 U.S. 914"
+  },
+  {
+   "name": "Gonzales v. Carhart",
+   "vol": 550,
+   "page": 124,
+   "year": 2007,
+   "cite": "550 U.S. 124"
+  },
+  {
+   "name": "Whole Woman's Health v. Hellerstedt",
+   "vol": 579,
+   "page": 582,
+   "year": 2016,
+   "cite": "579 U.S. 582"
+  },
+  {
+   "name": "Dobbs v. Jackson Women's Health Organization",
+   "vol": 597,
+   "page": 215,
+   "year": 2022,
+   "cite": "597 U.S. 215"
+  },
+  {
+   "name": "Cruzan v. Director, Missouri Department of Health",
+   "vol": 497,
+   "page": 261,
+   "year": 1990,
+   "cite": "497 U.S. 261"
+  },
+  {
+   "name": "Washington v. Glucksberg",
+   "vol": 521,
+   "page": 702,
+   "year": 1997,
+   "cite": "521 U.S. 702"
+  },
+  {
+   "name": "Vacco v. Quill",
+   "vol": 521,
+   "page": 793,
+   "year": 1997,
+   "cite": "521 U.S. 793"
+  },
+  {
+   "name": "Gonzales v. Oregon",
+   "vol": 546,
+   "page": 243,
+   "year": 2006,
+   "cite": "546 U.S. 243"
+  },
+  {
+   "name": "Elk v. Wilkins",
+   "vol": 112,
+   "page": 94,
+   "year": 1884,
+   "cite": "112 U.S. 94"
+  },
+  {
+   "name": "United States v. Wong Kim Ark",
+   "vol": 169,
+   "page": 649,
+   "year": 1898,
+   "cite": "169 U.S. 649"
+  },
+  {
+   "name": "Afroyim v. Rusk",
+   "vol": 387,
+   "page": 253,
+   "year": 1967,
+   "cite": "387 U.S. 253"
+  },
+  {
+   "name": "Crandall v. Nevada",
+   "vol": 73,
+   "page": 35,
+   "year": 1868,
+   "cite": "73 U.S. 35"
+  },
+  {
+   "name": "United States v. Wheeler",
+   "vol": 254,
+   "page": 281,
+   "year": 1920,
+   "cite": "254 U.S. 281"
+  },
+  {
+   "name": "Edwards v. California",
+   "vol": 314,
+   "page": 160,
+   "year": 1941,
+   "cite": "314 U.S. 160"
+  },
+  {
+   "name": "Kent v. Dulles",
+   "vol": 357,
+   "page": 116,
+   "year": 1958,
+   "cite": "357 U.S. 116"
+  },
+  {
+   "name": "Aptheker v. Secretary of State",
+   "vol": 378,
+   "page": 500,
+   "year": 1964,
+   "cite": "378 U.S. 500"
+  },
+  {
+   "name": "United States v. Guest",
+   "vol": 383,
+   "page": 745,
+   "year": 1966,
+   "cite": "383 U.S. 745"
+  },
+  {
+   "name": "Shapiro v. Thompson",
+   "vol": 394,
+   "page": 618,
+   "year": 1969,
+   "cite": "394 U.S. 618"
+  },
+  {
+   "name": "Saenz v. Roe",
+   "vol": 526,
+   "page": 489,
+   "year": 1999,
+   "cite": "526 U.S. 489"
+  },
+  {
+   "name": "Jackson v. Indiana",
+   "vol": 406,
+   "page": 715,
+   "year": 1972,
+   "cite": "406 U.S. 715"
+  },
+  {
+   "name": "O'Connor v. Donaldson",
+   "vol": 422,
+   "page": 563,
+   "year": 1975,
+   "cite": "422 U.S. 563"
+  },
+  {
+   "name": "Addington v. Texas",
+   "vol": 441,
+   "page": 418,
+   "year": 1979,
+   "cite": "441 U.S. 418"
+  },
+  {
+   "name": "Youngberg v. Romeo",
+   "vol": 457,
+   "page": 307,
+   "year": 1982,
+   "cite": "457 U.S. 307"
+  },
+  {
+   "name": "Compagnie Francaise de Navigation a Vapeur v. Louisiana Board of Health",
+   "vol": 186,
+   "page": 380,
+   "year": 1902,
+   "cite": "186 U.S. 380"
+  },
+  {
+   "name": "Jacobson v. Massachusetts",
+   "vol": 197,
+   "page": 11,
+   "year": 1905,
+   "cite": "197 U.S. 11"
+  },
+  {
+   "name": "Zucht v. King",
+   "vol": 260,
+   "page": 174,
+   "year": 1922,
+   "cite": "260 U.S. 174"
+  },
+  {
+   "name": "Buck v. Bell",
+   "vol": 274,
+   "page": 200,
+   "year": 1927,
+   "cite": "274 U.S. 200"
+  },
+  {
+   "name": "Prince v. Massachusetts",
+   "vol": 321,
+   "page": 158,
+   "year": 1944,
+   "cite": "321 U.S. 158"
+  },
+  {
+   "name": "Ex parte Milligan",
+   "vol": 71,
+   "page": 2,
+   "year": 1866,
+   "cite": "71 U.S. 2"
+  },
+  {
+   "name": "The Insular Cases",
+   "vol": 182,
+   "page": 1,
+   "year": 1901,
+   "cite": "182 U.S. 1"
+  },
+  {
+   "name": "Kinsella v. Krueger",
+   "vol": 351,
+   "page": 470,
+   "year": 1956,
+   "cite": "351 U.S. 470"
+  },
+  {
+   "name": "Reid v. Covert",
+   "vol": 354,
+   "page": 1,
+   "year": 1957,
+   "cite": "354 U.S. 1"
+  },
+  {
+   "name": "Trans World Airlines, Inc. v. Hardison",
+   "vol": 432,
+   "page": 63,
+   "year": 1977,
+   "cite": "432 U.S. 63"
+  },
+  {
+   "name": "Plyler v. Doe",
+   "vol": 457,
+   "page": 202,
+   "year": 1982,
+   "cite": "457 U.S. 202"
+  },
+  {
+   "name": "Weeks v. United States",
+   "vol": 232,
+   "page": 383,
+   "year": 1914,
+   "cite": "232 U.S. 383"
+  },
+  {
+   "name": "Silverthorne Lumber Co. v. United States",
+   "vol": 251,
+   "page": 385,
+   "year": 1920,
+   "cite": "251 U.S. 385"
+  },
+  {
+   "name": "Olmstead v. United States",
+   "vol": 277,
+   "page": 438,
+   "year": 1928,
+   "cite": "277 U.S. 438"
+  },
+  {
+   "name": "Mapp v. Ohio",
+   "vol": 367,
+   "page": 643,
+   "year": 1961,
+   "cite": "367 U.S. 643"
+  },
+  {
+   "name": "Schmerber v. California",
+   "vol": 384,
+   "page": 757,
+   "year": 1966,
+   "cite": "384 U.S. 757"
+  },
+  {
+   "name": "Katz v. United States",
+   "vol": 389,
+   "page": 347,
+   "year": 1967,
+   "cite": "389 U.S. 347"
+  },
+  {
+   "name": "Terry v. Ohio",
+   "vol": 392,
+   "page": 1,
+   "year": 1968,
+   "cite": "392 U.S. 1"
+  },
+  {
+   "name": "Mancusi v. DeForte",
+   "vol": 392,
+   "page": 364,
+   "year": 1968,
+   "cite": "392 U.S. 364"
+  },
+  {
+   "name": "Bivens v. Six Unknown Named Agents",
+   "vol": 403,
+   "page": 388,
+   "year": 1971,
+   "cite": "403 U.S. 388"
+  },
+  {
+   "name": "United States v. United States District Court for the Eastern District of Michigan",
+   "vol": 407,
+   "page": 297,
+   "year": 1972,
+   "cite": "407 U.S. 297"
+  },
+  {
+   "name": "Illinois v. Gates",
+   "vol": 462,
+   "page": 213,
+   "year": 1983,
+   "cite": "462 U.S. 213"
+  },
+  {
+   "name": "Nix v. Williams",
+   "vol": 467,
+   "page": 431,
+   "year": 1984,
+   "cite": "467 U.S. 431"
+  },
+  {
+   "name": "New Jersey v. T. L. O.",
+   "vol": 469,
+   "page": 325,
+   "year": 1985,
+   "cite": "469 U.S. 325"
+  },
+  {
+   "name": "O'Connor v. Ortega",
+   "vol": 480,
+   "page": 709,
+   "year": 1987,
+   "cite": "480 U.S. 709"
+  },
+  {
+   "name": "Vernonia School District 47J v. Acton",
+   "vol": 515,
+   "page": 646,
+   "year": 1995,
+   "cite": "515 U.S. 646"
+  },
+  {
+   "name": "Ohio v. Robinette",
+   "vol": 519,
+   "page": 33,
+   "year": 1996,
+   "cite": "519 U.S. 33"
+  },
+  {
+   "name": "Board of Education v. Earls",
+   "vol": 536,
+   "page": 822,
+   "year": 2002,
+   "cite": "536 U.S. 822"
+  },
+  {
+   "name": "Georgia v. Randolph",
+   "vol": 547,
+   "page": 103,
+   "year": 2006,
+   "cite": "547 U.S. 103"
+  },
+  {
+   "name": "United States v. Jones",
+   "vol": 565,
+   "page": 400,
+   "year": 2012,
+   "cite": "565 U.S. 400"
+  },
+  {
+   "name": "Riley v. California",
+   "vol": 573,
+   "page": 373,
+   "year": 2014,
+   "cite": "573 U.S. 373"
+  },
+  {
+   "name": "Carpenter v. United States",
+   "vol": 585,
+   "page": 296,
+   "year": 2018,
+   "cite": "585 U.S. 296"
+  },
+  {
+   "name": "Powell v. Alabama",
+   "vol": 287,
+   "page": 45,
+   "year": 1932,
+   "cite": "287 U.S. 45"
+  },
+  {
+   "name": "Betts v. Brady",
+   "vol": 316,
+   "page": 455,
+   "year": 1942,
+   "cite": "316 U.S. 455"
+  },
+  {
+   "name": "Gideon v. Wainwright",
+   "vol": 372,
+   "page": 335,
+   "year": 1963,
+   "cite": "372 U.S. 335"
+  },
+  {
+   "name": "Escobedo v. Illinois",
+   "vol": 378,
+   "page": 478,
+   "year": 1964,
+   "cite": "378 U.S. 478"
+  },
+  {
+   "name": "Miranda v. Arizona",
+   "vol": 384,
+   "page": 436,
+   "year": 1966,
+   "cite": "384 U.S. 436"
+  },
+  {
+   "name": "In re Gault",
+   "vol": 387,
+   "page": 1,
+   "year": 1967,
+   "cite": "387 U.S. 1"
+  },
+  {
+   "name": "Goss v. Lopez",
+   "vol": 419,
+   "page": 565,
+   "year": 1975,
+   "cite": "419 U.S. 565"
+  },
+  {
+   "name": "Michigan v. Jackson",
+   "vol": 475,
+   "page": 625,
+   "year": 1986,
+   "cite": "475 U.S. 625"
+  },
+  {
+   "name": "Montejo v. Louisiana",
+   "vol": 556,
+   "page": 778,
+   "year": 2009,
+   "cite": "556 U.S. 778"
+  },
+  {
+   "name": "Strickland v. Washington",
+   "vol": 466,
+   "page": 668,
+   "year": 1984,
+   "cite": "466 U.S. 668"
+  },
+  {
+   "name": "Padilla v. Kentucky",
+   "vol": 559,
+   "page": 356,
+   "year": 2010,
+   "cite": "559 U.S. 356"
+  },
+  {
+   "name": "Berghuis v. Thompkins",
+   "vol": 560,
+   "page": 370,
+   "year": 2010,
+   "cite": "560 U.S. 370"
+  },
+  {
+   "name": "Salinas v. Texas",
+   "vol": 570,
+   "page": 178,
+   "year": 2013,
+   "cite": "570 U.S. 178"
+  },
+  {
+   "name": "Dusky v. United States",
+   "vol": 362,
+   "page": 402,
+   "year": 1960,
+   "cite": "362 U.S. 402"
+  },
+  {
+   "name": "Ford v. Wainwright",
+   "vol": 477,
+   "page": 399,
+   "year": 1986,
+   "cite": "477 U.S. 399"
+  },
+  {
+   "name": "Godinez v. Moran",
+   "vol": 509,
+   "page": 389,
+   "year": 1993,
+   "cite": "509 U.S. 389"
+  },
+  {
+   "name": "Sell v. United States",
+   "vol": 539,
+   "page": 166,
+   "year": 2003,
+   "cite": "539 U.S. 166"
+  },
+  {
+   "name": "Kahler v. Kansas",
+   "vol": 589,
+   "page": 271,
+   "year": 2020,
+   "cite": "589 U.S. 271"
+  },
+  {
+   "name": "Rasul v. Bush",
+   "vol": 542,
+   "page": 466,
+   "year": 2004,
+   "cite": "542 U.S. 466"
+  },
+  {
+   "name": "Hamdi v. Rumsfeld",
+   "vol": 542,
+   "page": 507,
+   "year": 2004,
+   "cite": "542 U.S. 507"
+  },
+  {
+   "name": "Hamdan v. Rumsfeld",
+   "vol": 548,
+   "page": 557,
+   "year": 2006,
+   "cite": "548 U.S. 557"
+  },
+  {
+   "name": "Boumediene v. Bush",
+   "vol": 553,
+   "page": 723,
+   "year": 2008,
+   "cite": "553 U.S. 723"
+  },
+  {
+   "name": "Louisiana ex rel. Francis v. Resweber",
+   "vol": 329,
+   "page": 459,
+   "year": 1947,
+   "cite": "329 U.S. 459"
+  },
+  {
+   "name": "Witherspoon v. Illinois",
+   "vol": 391,
+   "page": 510,
+   "year": 1968,
+   "cite": "391 U.S. 510"
+  },
+  {
+   "name": "Furman v. Georgia",
+   "vol": 408,
+   "page": 238,
+   "year": 1972,
+   "cite": "408 U.S. 238"
+  },
+  {
+   "name": "Gregg v. Georgia",
+   "vol": 428,
+   "page": 153,
+   "year": 1976,
+   "cite": "428 U.S. 153"
+  },
+  {
+   "name": "Proffitt v. Florida",
+   "vol": 428,
+   "page": 242,
+   "year": 1976,
+   "cite": "428 U.S. 242"
+  },
+  {
+   "name": "Jurek v. Texas",
+   "vol": 428,
+   "page": 262,
+   "year": 1976,
+   "cite": "428 U.S. 262"
+  },
+  {
+   "name": "Woodson v. North Carolina",
+   "vol": 428,
+   "page": 280,
+   "year": 1976,
+   "cite": "428 U.S. 280"
+  },
+  {
+   "name": "Roberts v. Louisiana",
+   "vol": 428,
+   "page": 325,
+   "year": 1976,
+   "cite": "428 U.S. 325"
+  },
+  {
+   "name": "Coker v. Georgia",
+   "vol": 433,
+   "page": 584,
+   "year": 1977,
+   "cite": "433 U.S. 584"
+  },
+  {
+   "name": "Enmund v. Florida",
+   "vol": 458,
+   "page": 782,
+   "year": 1982,
+   "cite": "458 U.S. 782"
+  },
+  {
+   "name": "Tison v. Arizona",
+   "vol": 481,
+   "page": 137,
+   "year": 1987,
+   "cite": "481 U.S. 137"
+  },
+  {
+   "name": "McCleskey v. Kemp",
+   "vol": 481,
+   "page": 279,
+   "year": 1987,
+   "cite": "481 U.S. 279"
+  },
+  {
+   "name": "Stanford v. Kentucky",
+   "vol": 492,
+   "page": 361,
+   "year": 1989,
+   "cite": "492 U.S. 361"
+  },
+  {
+   "name": "Breard v. Greene",
+   "vol": 523,
+   "page": 371,
+   "year": 1998,
+   "cite": "523 U.S. 371"
+  },
+  {
+   "name": "Atkins v. Virginia",
+   "vol": 536,
+   "page": 304,
+   "year": 2002,
+   "cite": "536 U.S. 304"
+  },
+  {
+   "name": "Roper v. Simmons",
+   "vol": 543,
+   "page": 551,
+   "year": 2005,
+   "cite": "543 U.S. 551"
+  },
+  {
+   "name": "Baze v. Rees",
+   "vol": 553,
+   "page": 35,
+   "year": 2008,
+   "cite": "553 U.S. 35"
+  },
+  {
+   "name": "Kennedy v. Louisiana",
+   "vol": 554,
+   "page": 407,
+   "year": 2008,
+   "cite": "554 U.S. 407"
+  },
+  {
+   "name": "Glossip v. Gross",
+   "vol": 576,
+   "page": 863,
+   "year": 2015,
+   "cite": "576 U.S. 863"
+  },
+  {
+   "name": "Bucklew v. Precythe",
+   "vol": 587,
+   "page": 119,
+   "year": 2019,
+   "cite": "587 U.S. 119"
+  },
+  {
+   "name": "Apodaca v. Oregon",
+   "vol": 406,
+   "page": 404,
+   "year": 1972,
+   "cite": "406 U.S. 404"
+  },
+  {
+   "name": "Morrissey v. Brewer",
+   "vol": 408,
+   "page": 471,
+   "year": 1972,
+   "cite": "408 U.S. 471"
+  },
+  {
+   "name": "Gagnon v. Scarpelli",
+   "vol": 411,
+   "page": 778,
+   "year": 1973,
+   "cite": "411 U.S. 778"
+  },
+  {
+   "name": "Wolff v. McDonnell",
+   "vol": 418,
+   "page": 539,
+   "year": 1974,
+   "cite": "418 U.S. 539"
+  },
+  {
+   "name": "Bearden v. Georgia",
+   "vol": 461,
+   "page": 660,
+   "year": 1983,
+   "cite": "461 U.S. 660"
+  },
+  {
+   "name": "Apprendi v. New Jersey",
+   "vol": 530,
+   "page": 466,
+   "year": 2000,
+   "cite": "530 U.S. 466"
+  },
+  {
+   "name": "Blakely v. Washington",
+   "vol": 542,
+   "page": 296,
+   "year": 2004,
+   "cite": "542 U.S. 296"
+  },
+  {
+   "name": "United States v. Booker",
+   "vol": 543,
+   "page": 220,
+   "year": 2005,
+   "cite": "543 U.S. 220"
+  },
+  {
+   "name": "Graham v. Florida",
+   "vol": 560,
+   "page": 48,
+   "year": 2010,
+   "cite": "560 U.S. 48"
+  },
+  {
+   "name": "Miller v. Alabama",
+   "vol": 567,
+   "page": 460,
+   "year": 2012,
+   "cite": "567 U.S. 460"
+  },
+  {
+   "name": "Ramos v. Louisiana",
+   "vol": 590,
+   "page": 83,
+   "year": 2020,
+   "cite": "590 U.S. 83"
+  },
+  {
+   "name": "United States v. Hudson",
+   "vol": 11,
+   "page": 32,
+   "year": 1812,
+   "cite": "11 U.S. 32"
+  },
+  {
+   "name": "Hurtado v. California",
+   "vol": 110,
+   "page": 516,
+   "year": 1884,
+   "cite": "110 U.S. 516"
+  },
+  {
+   "name": "Moore v. Dempsey",
+   "vol": 261,
+   "page": 86,
+   "year": 1923,
+   "cite": "261 U.S. 86"
+  },
+  {
+   "name": "Sorrells v. United States",
+   "vol": 287,
+   "page": 435,
+   "year": 1932,
+   "cite": "287 U.S. 435"
+  },
+  {
+   "name": "Brown v. Mississippi",
+   "vol": 297,
+   "page": 278,
+   "year": 1936,
+   "cite": "297 U.S. 278"
+  },
+  {
+   "name": "Chambers v. Florida",
+   "vol": 309,
+   "page": 227,
+   "year": 1940,
+   "cite": "309 U.S. 227"
+  },
+  {
+   "name": "United States v. Morgan",
+   "vol": 346,
+   "page": 502,
+   "year": 1954,
+   "cite": "346 U.S. 502"
+  },
+  {
+   "name": "Thompson v. City of Louisville",
+   "vol": 362,
+   "page": 199,
+   "year": 1960,
+   "cite": "362 U.S. 199"
+  },
+  {
+   "name": "Robinson v. California",
+   "vol": 370,
+   "page": 660,
+   "year": 1962,
+   "cite": "370 U.S. 660"
+  },
+  {
+   "name": "Brady v. Maryland",
+   "vol": 373,
+   "page": 83,
+   "year": 1963,
+   "cite": "373 U.S. 83"
+  },
+  {
+   "name": "Duncan v. Louisiana",
+   "vol": 391,
+   "page": 145,
+   "year": 1968,
+   "cite": "391 U.S. 145"
+  },
+  {
+   "name": "Barker v. Wingo",
+   "vol": 407,
+   "page": 514,
+   "year": 1972,
+   "cite": "407 U.S. 514"
+  },
+  {
+   "name": "Crawford v. Washington",
+   "vol": 541,
+   "page": 36,
+   "year": 2004,
+   "cite": "541 U.S. 36"
+  },
+  {
+   "name": "Pennoyer v. Neff",
+   "vol": 95,
+   "page": 714,
+   "year": 1878,
+   "cite": "95 U.S. 714"
+  },
+  {
+   "name": "International Shoe Co. v. Washington",
+   "vol": 326,
+   "page": 310,
+   "year": 1945,
+   "cite": "326 U.S. 310"
+  },
+  {
+   "name": "World-Wide Volkswagen Corp. v. Woodson",
+   "vol": 444,
+   "page": 286,
+   "year": 1980,
+   "cite": "444 U.S. 286"
+  },
+  {
+   "name": "Daimler AG v. Bauman",
+   "vol": 571,
+   "page": 117,
+   "year": 2014,
+   "cite": "571 U.S. 117"
+  },
+  {
+   "name": "Bristol-Myers Squibb Co. v. Superior Court",
+   "vol": 582,
+   "page": 255,
+   "year": 2017,
+   "cite": "582 U.S. 255"
+  },
+  {
+   "name": "Ford Motor Co. v. Montana Eighth Judicial District",
+   "vol": 592,
+   "page": 351,
+   "year": 2021,
+   "cite": "592 U.S. 351"
+  },
+  {
+   "name": "Mallory v. Norfolk Southern Railway Co.",
+   "vol": 600,
+   "page": 122,
+   "year": 2023,
+   "cite": "600 U.S. 122"
+  },
+  {
+   "name": "Chisholm v. Georgia",
+   "vol": 2,
+   "page": 419,
+   "year": 1793,
+   "cite": "2 U.S. 419"
+  },
+  {
+   "name": "Hylton v. United States",
+   "vol": 3,
+   "page": 171,
+   "year": 1796,
+   "cite": "3 U.S. 171"
+  },
+  {
+   "name": "Ware v. Hylton",
+   "vol": 3,
+   "page": 199,
+   "year": 1796,
+   "cite": "3 U.S. 199"
+  },
+  {
+   "name": "Fletcher v. Peck",
+   "vol": 10,
+   "page": 87,
+   "year": 1810,
+   "cite": "10 U.S. 87"
+  },
+  {
+   "name": "Martin v. Hunter's Lessee",
+   "vol": 14,
+   "page": 304,
+   "year": 1816,
+   "cite": "14 U.S. 304"
+  },
+  {
+   "name": "McCulloch v. Maryland",
+   "vol": 17,
+   "page": 316,
+   "year": 1819,
+   "cite": "17 U.S. 316"
+  },
+  {
+   "name": "Cohens v. Virginia",
+   "vol": 19,
+   "page": 264,
+   "year": 1821,
+   "cite": "19 U.S. 264"
+  },
+  {
+   "name": "Gibbons v. Ogden",
+   "vol": 22,
+   "page": 1,
+   "year": 1824,
+   "cite": "22 U.S. 1"
+  },
+  {
+   "name": "Barron v. Baltimore",
+   "vol": 32,
+   "page": 243,
+   "year": 1833,
+   "cite": "32 U.S. 243"
+  },
+  {
+   "name": "Cooley v. Board of Wardens",
+   "vol": 53,
+   "page": 299,
+   "year": 1852,
+   "cite": "53 U.S. 299"
+  },
+  {
+   "name": "Ableman v. Booth",
+   "vol": 62,
+   "page": 506,
+   "year": 1859,
+   "cite": "62 U.S. 506"
+  },
+  {
+   "name": "Texas v. White",
+   "vol": 74,
+   "page": 700,
+   "year": 1869,
+   "cite": "74 U.S. 700"
+  },
+  {
+   "name": "Hans v. Louisiana",
+   "vol": 134,
+   "page": 1,
+   "year": 1890,
+   "cite": "134 U.S. 1"
+  },
+  {
+   "name": "Pollock v. Farmers' Loan &amp; Trust Co.",
+   "vol": 157,
+   "page": 429,
+   "year": 1895,
+   "cite": "157 U.S. 429"
+  },
+  {
+   "name": "Swift and Company v. United States",
+   "vol": 196,
+   "page": 375,
+   "year": 1905,
+   "cite": "196 U.S. 375"
+  },
+  {
+   "name": "Hunter v. City of Pittsburgh",
+   "vol": 207,
+   "page": 161,
+   "year": 1907,
+   "cite": "207 U.S. 161"
+  },
+  {
+   "name": "Ex parte Young",
+   "vol": 209,
+   "page": 123,
+   "year": 1908,
+   "cite": "209 U.S. 123"
+  },
+  {
+   "name": "Hammer v. Dagenhart",
+   "vol": 247,
+   "page": 251,
+   "year": 1918,
+   "cite": "247 U.S. 251"
+  },
+  {
+   "name": "Missouri v. Holland",
+   "vol": 252,
+   "page": 416,
+   "year": 1920,
+   "cite": "252 U.S. 416"
+  },
+  {
+   "name": "Hawke v. Smith",
+   "vol": 253,
+   "page": 221,
+   "year": 1920,
+   "cite": "253 U.S. 221"
+  },
+  {
+   "name": "United States v. Butler",
+   "vol": 297,
+   "page": 1,
+   "year": 1936,
+   "cite": "297 U.S. 1"
+  },
+  {
+   "name": "Carter v. Carter Coal Co.",
+   "vol": 298,
+   "page": 238,
+   "year": 1936,
+   "cite": "298 U.S. 238"
+  },
+  {
+   "name": "National Labor Relations Board v. Jones &amp; Laughlin Steel Corporation",
+   "vol": 301,
+   "page": 1,
+   "year": 1937,
+   "cite": "301 U.S. 1"
+  },
+  {
+   "name": "Steward Machine Company v. Davis",
+   "vol": 301,
+   "page": 548,
+   "year": 1937,
+   "cite": "301 U.S. 548"
+  },
+  {
+   "name": "New Negro Alliance v. Sanitary Grocery Co.",
+   "vol": 303,
+   "page": 552,
+   "year": 1938,
+   "cite": "303 U.S. 552"
+  },
+  {
+   "name": "United States v. Carolene Products Co.",
+   "vol": 304,
+   "page": 144,
+   "year": 1938,
+   "cite": "304 U.S. 144"
+  },
+  {
+   "name": "United States v. Darby Lumber Co.",
+   "vol": 312,
+   "page": 100,
+   "year": 1941,
+   "cite": "312 U.S. 100"
+  },
+  {
+   "name": "Wickard v. Filburn",
+   "vol": 317,
+   "page": 111,
+   "year": 1942,
+   "cite": "317 U.S. 111"
+  },
+  {
+   "name": "Cooper v. Aaron",
+   "vol": 358,
+   "page": 1,
+   "year": 1958,
+   "cite": "358 U.S. 1"
+  },
+  {
+   "name": "Oregon v. Mitchell",
+   "vol": 400,
+   "page": 112,
+   "year": 1970,
+   "cite": "400 U.S. 112"
+  },
+  {
+   "name": "Marquette National Bank of Minneapolis v. First of Omaha Service Corp.",
+   "vol": 439,
+   "page": 299,
+   "year": 1978,
+   "cite": "439 U.S. 299"
+  },
+  {
+   "name": "Garcia v. San Antonio Metropolitan Transit Authority",
+   "vol": 469,
+   "page": 528,
+   "year": 1985,
+   "cite": "469 U.S. 528"
+  },
+  {
+   "name": "Heath v. Alabama",
+   "vol": 474,
+   "page": 82,
+   "year": 1985,
+   "cite": "474 U.S. 82"
+  },
+  {
+   "name": "South Dakota v. Dole",
+   "vol": 483,
+   "page": 203,
+   "year": 1987,
+   "cite": "483 U.S. 203"
+  },
+  {
+   "name": "United States v. Lopez",
+   "vol": 514,
+   "page": 549,
+   "year": 1995,
+   "cite": "514 U.S. 549"
+  },
+  {
+   "name": "U.S. Term Limits, Inc. v. Thornton",
+   "vol": 514,
+   "page": 779,
+   "year": 1995,
+   "cite": "514 U.S. 779"
+  },
+  {
+   "name": "Printz v. United States",
+   "vol": 521,
+   "page": 898,
+   "year": 1997,
+   "cite": "521 U.S. 898"
+  },
+  {
+   "name": "United States v. Morrison",
+   "vol": 529,
+   "page": 598,
+   "year": 2000,
+   "cite": "529 U.S. 598"
+  },
+  {
+   "name": "Gonzales v. Raich",
+   "vol": 545,
+   "page": 1,
+   "year": 2005,
+   "cite": "545 U.S. 1"
+  },
+  {
+   "name": "Bond v. United States",
+   "vol": 564,
+   "page": 211,
+   "year": 2011,
+   "cite": "564 U.S. 211"
+  },
+  {
+   "name": "Arizona v. United States",
+   "vol": 567,
+   "page": 387,
+   "year": 2012,
+   "cite": "567 U.S. 387"
+  },
+  {
+   "name": "National Federation of Independent Business v. Sebelius",
+   "vol": 567,
+   "page": 519,
+   "year": 2012,
+   "cite": "567 U.S. 519"
+  },
+  {
+   "name": "Bond v. United States",
+   "vol": 572,
+   "page": 844,
+   "year": 2014,
+   "cite": "572 U.S. 844"
+  },
+  {
+   "name": "Murphy v. National Collegiate Athletic Association",
+   "vol": 584,
+   "page": 453,
+   "year": 2018,
+   "cite": "584 U.S. 453"
+  },
+  {
+   "name": "Johnson v. McIntosh",
+   "vol": 21,
+   "page": 543,
+   "year": 1823,
+   "cite": "21 U.S. 543"
+  },
+  {
+   "name": "Worcester v. Georgia",
+   "vol": 31,
+   "page": 515,
+   "year": 1832,
+   "cite": "31 U.S. 515"
+  },
+  {
+   "name": "Ex parte Crow Dog",
+   "vol": 109,
+   "page": 556,
+   "year": 1883,
+   "cite": "109 U.S. 556"
+  },
+  {
+   "name": "United States v. Kagama",
+   "vol": 118,
+   "page": 375,
+   "year": 1886,
+   "cite": "118 U.S. 375"
+  },
+  {
+   "name": "Talton v. Mayes",
+   "vol": 163,
+   "page": 376,
+   "year": 1896,
+   "cite": "163 U.S. 376"
+  },
+  {
+   "name": "Lone Wolf v. Hitchcock",
+   "vol": 187,
+   "page": 553,
+   "year": 1903,
+   "cite": "187 U.S. 553"
+  },
+  {
+   "name": "Williams v. Lee",
+   "vol": 358,
+   "page": 217,
+   "year": 1959,
+   "cite": "358 U.S. 217"
+  },
+  {
+   "name": "Menominee Tribe v. United States",
+   "vol": 391,
+   "page": 404,
+   "year": 1968,
+   "cite": "391 U.S. 404"
+  },
+  {
+   "name": "Oneida Indian Nation of New York v. County of Oneida",
+   "vol": 414,
+   "page": 661,
+   "year": 1974,
+   "cite": "414 U.S. 661"
+  },
+  {
+   "name": "Bryan v. Itasca County",
+   "vol": 426,
+   "page": 373,
+   "year": 1976,
+   "cite": "426 U.S. 373"
+  },
+  {
+   "name": "Oliphant v. Suquamish Indian Tribe",
+   "vol": 435,
+   "page": 191,
+   "year": 1978,
+   "cite": "435 U.S. 191"
+  },
+  {
+   "name": "United States v. Wheeler",
+   "vol": 435,
+   "page": 313,
+   "year": 1978,
+   "cite": "435 U.S. 313"
+  },
+  {
+   "name": "Santa Clara Pueblo v. Martinez",
+   "vol": 436,
+   "page": 49,
+   "year": 1978,
+   "cite": "436 U.S. 49"
+  },
+  {
+   "name": "Solem v. Bartlett",
+   "vol": 465,
+   "page": 463,
+   "year": 1984,
+   "cite": "465 U.S. 463"
+  },
+  {
+   "name": "County of Oneida v. Oneida Indian Nation of New York State",
+   "vol": 470,
+   "page": 226,
+   "year": 1985,
+   "cite": "470 U.S. 226"
+  },
+  {
+   "name": "Lyng v. Northwest Indian Cemetery Protective Association",
+   "vol": 485,
+   "page": 439,
+   "year": 1988,
+   "cite": "485 U.S. 439"
+  },
+  {
+   "name": "United States v. Lara",
+   "vol": 541,
+   "page": 193,
+   "year": 2004,
+   "cite": "541 U.S. 193"
+  },
+  {
+   "name": "Herrera v. Wyoming",
+   "vol": 587,
+   "page": 329,
+   "year": 2019,
+   "cite": "587 U.S. 329"
+  },
+  {
+   "name": "McGirt v. Oklahoma",
+   "vol": 591,
+   "page": 894,
+   "year": 2020,
+   "cite": "591 U.S. 894"
+  },
+  {
+   "name": "Sharp v. Murphy",
+   "vol": 591,
+   "page": 977,
+   "year": 2020,
+   "cite": "591 U.S. 977"
+  },
+  {
+   "name": "United States v. Cooley",
+   "vol": 593,
+   "page": 345,
+   "year": 2021,
+   "cite": "593 U.S. 345"
+  },
+  {
+   "name": "Oklahoma v. Castro-Huerta",
+   "vol": 597,
+   "page": 629,
+   "year": 2022,
+   "cite": "597 U.S. 629"
+  },
+  {
+   "name": "National Socialist Party of America v. Village of Skokie",
+   "vol": 432,
+   "page": 43,
+   "year": 1977,
+   "cite": "432 U.S. 43"
+  },
+  {
+   "name": "Ward v. Rock Against Racism",
+   "vol": 491,
+   "page": 781,
+   "year": 1989,
+   "cite": "491 U.S. 781"
+  },
+  {
+   "name": "Patterson v. Colorado",
+   "vol": 205,
+   "page": 454,
+   "year": 1907,
+   "cite": "205 U.S. 454"
+  },
+  {
+   "name": "Mutual Film Corp. v. Industrial Commission of Ohio",
+   "vol": 236,
+   "page": 230,
+   "year": 1915,
+   "cite": "236 U.S. 230"
+  },
+  {
+   "name": "Schenck v. United States",
+   "vol": 249,
+   "page": 47,
+   "year": 1919,
+   "cite": "249 U.S. 47"
+  },
+  {
+   "name": "Abrams v. United States",
+   "vol": 250,
+   "page": 616,
+   "year": 1919,
+   "cite": "250 U.S. 616"
+  },
+  {
+   "name": "Gitlow v. New York",
+   "vol": 268,
+   "page": 652,
+   "year": 1925,
+   "cite": "268 U.S. 652"
+  },
+  {
+   "name": "Stromberg v. California",
+   "vol": 283,
+   "page": 359,
+   "year": 1931,
+   "cite": "283 U.S. 359"
+  },
+  {
+   "name": "Near v. Minnesota",
+   "vol": 283,
+   "page": 697,
+   "year": 1931,
+   "cite": "283 U.S. 697"
+  },
+  {
+   "name": "Chaplinsky v. New Hampshire",
+   "vol": 315,
+   "page": 568,
+   "year": 1942,
+   "cite": "315 U.S. 568"
+  },
+  {
+   "name": "Joseph Burstyn, Inc. v. Wilson",
+   "vol": 343,
+   "page": 495,
+   "year": 1952,
+   "cite": "343 U.S. 495"
+  },
+  {
+   "name": "Roth v. United States",
+   "vol": 354,
+   "page": 476,
+   "year": 1957,
+   "cite": "354 U.S. 476"
+  },
+  {
+   "name": "Manual Enterprises, Inc. v. Day",
+   "vol": 370,
+   "page": 348,
+   "year": 1962,
+   "cite": "370 U.S. 348"
+  },
+  {
+   "name": "New York Times Co. v. Sullivan",
+   "vol": 376,
+   "page": 254,
+   "year": 1964,
+   "cite": "376 U.S. 254"
+  },
+  {
+   "name": "Dombrowski v. Pfister",
+   "vol": 380,
+   "page": 479,
+   "year": 1965,
+   "cite": "380 U.S. 479"
+  },
+  {
+   "name": "Curtis Publishing Co. v. Butts",
+   "vol": 388,
+   "page": 130,
+   "year": 1967,
+   "cite": "388 U.S. 130"
+  },
+  {
+   "name": "United States v. O'Brien",
+   "vol": 391,
+   "page": 367,
+   "year": 1968,
+   "cite": "391 U.S. 367"
+  },
+  {
+   "name": "Pickering v. Board of Education",
+   "vol": 391,
+   "page": 563,
+   "year": 1968,
+   "cite": "391 U.S. 563"
+  },
+  {
+   "name": "Tinker v. Des Moines Independent Community School District",
+   "vol": 393,
+   "page": 503,
+   "year": 1969,
+   "cite": "393 U.S. 503"
+  },
+  {
+   "name": "Brandenburg v. Ohio",
+   "vol": 395,
+   "page": 444,
+   "year": 1969,
+   "cite": "395 U.S. 444"
+  },
+  {
+   "name": "Cohen v. California",
+   "vol": 403,
+   "page": 15,
+   "year": 1971,
+   "cite": "403 U.S. 15"
+  },
+  {
+   "name": "New York Times Co. v. United States",
+   "vol": 403,
+   "page": 713,
+   "year": 1971,
+   "cite": "403 U.S. 713"
+  },
+  {
+   "name": "Branzburg v. Hayes",
+   "vol": 408,
+   "page": 665,
+   "year": 1972,
+   "cite": "408 U.S. 665"
+  },
+  {
+   "name": "Miller v. California",
+   "vol": 413,
+   "page": 15,
+   "year": 1973,
+   "cite": "413 U.S. 15"
+  },
+  {
+   "name": "Gertz v. Robert Welch, Inc.",
+   "vol": 418,
+   "page": 323,
+   "year": 1974,
+   "cite": "418 U.S. 323"
+  },
+  {
+   "name": "Buckley v. Valeo",
+   "vol": 424,
+   "page": 1,
+   "year": 1976,
+   "cite": "424 U.S. 1"
+  },
+  {
+   "name": "Virginia State Pharmacy Board v. Virginia Citizens Consumer Council",
+   "vol": 425,
+   "page": 748,
+   "year": 1976,
+   "cite": "425 U.S. 748"
+  },
+  {
+   "name": "Federal Communications Commission v. Pacifica Foundation",
+   "vol": 438,
+   "page": 726,
+   "year": 1978,
+   "cite": "438 U.S. 726"
+  },
+  {
+   "name": "Central Hudson Gas &amp; Electric Corp. v. Public Service Commission",
+   "vol": 447,
+   "page": 557,
+   "year": 1980,
+   "cite": "447 U.S. 557"
+  },
+  {
+   "name": "NAACP v. Claiborne Hardware Co.",
+   "vol": 458,
+   "page": 886,
+   "year": 1982,
+   "cite": "458 U.S. 886"
+  },
+  {
+   "name": "New York v. Ferber",
+   "vol": 458,
+   "page": 747,
+   "year": 1982,
+   "cite": "458 U.S. 747"
+  },
+  {
+   "name": "Connick v. Myers",
+   "vol": 461,
+   "page": 138,
+   "year": 1983,
+   "cite": "461 U.S. 138"
+  },
+  {
+   "name": "Posadas de Puerto Rico Associates v. Tourism Co. of Puerto Rico",
+   "vol": 478,
+   "page": 328,
+   "year": 1986,
+   "cite": "478 U.S. 328"
+  },
+  {
+   "name": "Bethel School District v. Fraser",
+   "vol": 478,
+   "page": 675,
+   "year": 1986,
+   "cite": "478 U.S. 675"
+  },
+  {
+   "name": "Hazelwood v. Kuhlmeier",
+   "vol": 484,
+   "page": 260,
+   "year": 1988,
+   "cite": "484 U.S. 260"
+  },
+  {
+   "name": "Hustler Magazine v. Falwell",
+   "vol": 485,
+   "page": 46,
+   "year": 1988,
+   "cite": "485 U.S. 46"
+  },
+  {
+   "name": "Texas v. Johnson",
+   "vol": 491,
+   "page": 397,
+   "year": 1989,
+   "cite": "491 U.S. 397"
+  },
+  {
+   "name": "Barnes v. Glen Theatre, Inc.",
+   "vol": 501,
+   "page": 560,
+   "year": 1991,
+   "cite": "501 U.S. 560"
+  },
+  {
+   "name": "R.A.V. v. City of St. Paul",
+   "vol": 505,
+   "page": 377,
+   "year": 1992,
+   "cite": "505 U.S. 377"
+  },
+  {
+   "name": "Wisconsin v. Mitchell",
+   "vol": 508,
+   "page": 476,
+   "year": 1993,
+   "cite": "508 U.S. 476"
+  },
+  {
+   "name": "Reno v. American Civil Liberties Union",
+   "vol": 521,
+   "page": 844,
+   "year": 1997,
+   "cite": "521 U.S. 844"
+  },
+  {
+   "name": "Virginia v. Black",
+   "vol": 538,
+   "page": 343,
+   "year": 2003,
+   "cite": "538 U.S. 343"
+  },
+  {
+   "name": "McConnell v. Federal Election Commission",
+   "vol": 540,
+   "page": 93,
+   "year": 2003,
+   "cite": "540 U.S. 93"
+  },
+  {
+   "name": "Garcetti v. Ceballos",
+   "vol": 547,
+   "page": 410,
+   "year": 2006,
+   "cite": "547 U.S. 410"
+  },
+  {
+   "name": "Davis v. Federal Election Commission",
+   "vol": 554,
+   "page": 724,
+   "year": 2008,
+   "cite": "554 U.S. 724"
+  },
+  {
+   "name": "Citizens United v. Federal Election Commission",
+   "vol": 558,
+   "page": 310,
+   "year": 2010,
+   "cite": "558 U.S. 310"
+  },
+  {
+   "name": "Snyder v. Phelps",
+   "vol": 562,
+   "page": 443,
+   "year": 2011,
+   "cite": "562 U.S. 443"
+  },
+  {
+   "name": "Brown v. Entertainment Merchants Association",
+   "vol": 564,
+   "page": 786,
+   "year": 2011,
+   "cite": "564 U.S. 786"
+  },
+  {
+   "name": "McCutcheon v. Federal Election Commission",
+   "vol": 572,
+   "page": 185,
+   "year": 2014,
+   "cite": "572 U.S. 185"
+  },
+  {
+   "name": "Minnesota Voters Alliance v. Mansky",
+   "vol": 585,
+   "page": 1,
+   "year": 2018,
+   "cite": "585 U.S. 1"
+  },
+  {
+   "name": "303 Creative LLC v. Elenis",
+   "vol": 600,
+   "page": 570,
+   "year": 2023,
+   "cite": "600 U.S. 570"
+  },
+  {
+   "name": "Reynolds v. United States",
+   "vol": 98,
+   "page": 145,
+   "year": 1879,
+   "cite": "98 U.S. 145"
+  },
+  {
+   "name": "Davis v. Beason",
+   "vol": 133,
+   "page": 333,
+   "year": 1890,
+   "cite": "133 U.S. 333"
+  },
+  {
+   "name": "Cantwell v. Connecticut",
+   "vol": 310,
+   "page": 296,
+   "year": 1940,
+   "cite": "310 U.S. 296"
+  },
+  {
+   "name": "Minersville School District v. Gobitis",
+   "vol": 310,
+   "page": 586,
+   "year": 1940,
+   "cite": "310 U.S. 586"
+  },
+  {
+   "name": "Murdock v. Pennsylvania",
+   "vol": 319,
+   "page": 105,
+   "year": 1943,
+   "cite": "319 U.S. 105"
+  },
+  {
+   "name": "West Virginia State Board of Education v. Barnette",
+   "vol": 319,
+   "page": 624,
+   "year": 1943,
+   "cite": "319 U.S. 624"
+  },
+  {
+   "name": "Marsh v. Alabama",
+   "vol": 326,
+   "page": 501,
+   "year": 1946,
+   "cite": "326 U.S. 501"
+  },
+  {
+   "name": "Everson v. Board of Education",
+   "vol": 330,
+   "page": 1,
+   "year": 1947,
+   "cite": "330 U.S. 1"
+  },
+  {
+   "name": "McCollum v. Board of Education",
+   "vol": 333,
+   "page": 203,
+   "year": 1948,
+   "cite": "333 U.S. 203"
+  },
+  {
+   "name": "Kunz v. New York",
+   "vol": 340,
+   "page": 290,
+   "year": 1951,
+   "cite": "340 U.S. 290"
+  },
+  {
+   "name": "Braunfeld v. Brown",
+   "vol": 366,
+   "page": 599,
+   "year": 1961,
+   "cite": "366 U.S. 599"
+  },
+  {
+   "name": "Engel v. Vitale",
+   "vol": 370,
+   "page": 421,
+   "year": 1962,
+   "cite": "370 U.S. 421"
+  },
+  {
+   "name": "Abington School District v. Schempp",
+   "vol": 374,
+   "page": 203,
+   "year": 1963,
+   "cite": "374 U.S. 203"
+  },
+  {
+   "name": "Sherbert v. Verner",
+   "vol": 374,
+   "page": 398,
+   "year": 1963,
+   "cite": "374 U.S. 398"
+  },
+  {
+   "name": "Flast v. Cohen",
+   "vol": 392,
+   "page": 83,
+   "year": 1968,
+   "cite": "392 U.S. 83"
+  },
+  {
+   "name": "Epperson v. Arkansas",
+   "vol": 393,
+   "page": 97,
+   "year": 1968,
+   "cite": "393 U.S. 97"
+  },
+  {
+   "name": "Lemon v. Kurtzman",
+   "vol": 403,
+   "page": 602,
+   "year": 1971,
+   "cite": "403 U.S. 602"
+  },
+  {
+   "name": "Wisconsin v. Yoder",
+   "vol": 406,
+   "page": 205,
+   "year": 1972,
+   "cite": "406 U.S. 205"
+  },
+  {
+   "name": "Marsh v. Chambers",
+   "vol": 463,
+   "page": 783,
+   "year": 1983,
+   "cite": "463 U.S. 783"
+  },
+  {
+   "name": "Edwards v. Aguillard",
+   "vol": 482,
+   "page": 578,
+   "year": 1987,
+   "cite": "482 U.S. 578"
+  },
+  {
+   "name": "Corporation of Presiding Bishop v. Amos",
+   "vol": 483,
+   "page": 327,
+   "year": 1987,
+   "cite": "483 U.S. 327"
+  },
+  {
+   "name": "Employment Division v. Smith",
+   "vol": 494,
+   "page": 872,
+   "year": 1990,
+   "cite": "494 U.S. 872"
+  },
+  {
+   "name": "Lee v. Weisman",
+   "vol": 505,
+   "page": 577,
+   "year": 1992,
+   "cite": "505 U.S. 577"
+  },
+  {
+   "name": "Church of the Lukumi Babalu Aye v. City of Hialeah",
+   "vol": 508,
+   "page": 520,
+   "year": 1993,
+   "cite": "508 U.S. 520"
+  },
+  {
+   "name": "Rosenberger v. University of Virginia",
+   "vol": 515,
+   "page": 819,
+   "year": 1995,
+   "cite": "515 U.S. 819"
+  },
+  {
+   "name": "Agostini v. Felton",
+   "vol": 521,
+   "page": 203,
+   "year": 1997,
+   "cite": "521 U.S. 203"
+  },
+  {
+   "name": "Santa Fe Independent School District v. Doe",
+   "vol": 530,
+   "page": 290,
+   "year": 2000,
+   "cite": "530 U.S. 290"
+  },
+  {
+   "name": "Zelman v. Simmons-Harris",
+   "vol": 536,
+   "page": 639,
+   "year": 2002,
+   "cite": "536 U.S. 639"
+  },
+  {
+   "name": "Hosanna-Tabor Evangelical Lutheran Church and School v. Equal Employment Opportunity Commission",
+   "vol": 565,
+   "page": 171,
+   "year": 2012,
+   "cite": "565 U.S. 171"
+  },
+  {
+   "name": "Town of Greece v. Galloway",
+   "vol": 572,
+   "page": 565,
+   "year": 2014,
+   "cite": "572 U.S. 565"
+  },
+  {
+   "name": "Burwell v. Hobby Lobby Stores, Inc.",
+   "vol": 573,
+   "page": 682,
+   "year": 2014,
+   "cite": "573 U.S. 682"
+  },
+  {
+   "name": "American Legion v. American Humanist Association",
+   "vol": 588,
+   "page": 29,
+   "year": 2019,
+   "cite": "588 U.S. 29"
+  },
+  {
+   "name": "Espinoza v. Montana Department of Revenue",
+   "vol": 591,
+   "page": 464,
+   "year": 2020,
+   "cite": "591 U.S. 464"
+  },
+  {
+   "name": "Carson v. Makin",
+   "vol": 596,
+   "page": 767,
+   "year": 2022,
+   "cite": "596 U.S. 767"
+  },
+  {
+   "name": "Kennedy v. Bremerton School District",
+   "vol": 597,
+   "page": 507,
+   "year": 2022,
+   "cite": "597 U.S. 507"
+  },
+  {
+   "name": "De Jonge v. Oregon",
+   "vol": 299,
+   "page": 353,
+   "year": 1937,
+   "cite": "299 U.S. 353"
+  },
+  {
+   "name": "National Association for the Advancement of Colored People v. Alabama",
+   "vol": 357,
+   "page": 449,
+   "year": 1958,
+   "cite": "357 U.S. 449"
+  },
+  {
+   "name": "Hurley v. Irish-American Gay, Lesbian, and Bisexual Group of Boston",
+   "vol": 515,
+   "page": 557,
+   "year": 1995,
+   "cite": "515 U.S. 557"
+  },
+  {
+   "name": "Boy Scouts of America v. Dale",
+   "vol": 530,
+   "page": 640,
+   "year": 2000,
+   "cite": "530 U.S. 640"
+  },
+  {
+   "name": "Edwards v. South Carolina",
+   "vol": 372,
+   "page": 229,
+   "year": 1963,
+   "cite": "372 U.S. 229"
+  },
+  {
+   "name": "California Motor Transport Co. v. Trucking Unlimited",
+   "vol": 404,
+   "page": 508,
+   "year": 1972,
+   "cite": "404 U.S. 508"
+  },
+  {
+   "name": "United States v. Cruikshank",
+   "vol": 92,
+   "page": 542,
+   "year": 1876,
+   "cite": "92 U.S. 542"
+  },
+  {
+   "name": "Presser v. Illinois",
+   "vol": 116,
+   "page": 252,
+   "year": 1886,
+   "cite": "116 U.S. 252"
+  },
+  {
+   "name": "United States v. Miller",
+   "vol": 307,
+   "page": 174,
+   "year": 1939,
+   "cite": "307 U.S. 174"
+  },
+  {
+   "name": "District of Columbia v. Heller",
+   "vol": 554,
+   "page": 570,
+   "year": 2008,
+   "cite": "554 U.S. 570"
+  },
+  {
+   "name": "McDonald v. City of Chicago",
+   "vol": 561,
+   "page": 742,
+   "year": 2010,
+   "cite": "561 U.S. 742"
+  },
+  {
+   "name": "Caetano v. Massachusetts",
+   "vol": 577,
+   "page": 411,
+   "year": 2016,
+   "cite": "577 U.S. 411"
+  },
+  {
+   "name": "New York State Rifle &amp; Pistol Association, Inc. v. Bruen",
+   "vol": 597,
+   "page": 1,
+   "year": 2022,
+   "cite": "597 U.S. 1"
+  },
+  {
+   "name": "Slaughter-House Cases",
+   "vol": 83,
+   "page": 36,
+   "year": 1873,
+   "cite": "83 U.S. 36"
+  },
+  {
+   "name": "Allgeyer v. Louisiana",
+   "vol": 165,
+   "page": 578,
+   "year": 1897,
+   "cite": "165 U.S. 578"
+  },
+  {
+   "name": "Meyer v. Nebraska",
+   "vol": 262,
+   "page": 390,
+   "year": 1923,
+   "cite": "262 U.S. 390"
+  },
+  {
+   "name": "Pierce v. Society of Sisters",
+   "vol": 268,
+   "page": 510,
+   "year": 1925,
+   "cite": "268 U.S. 510"
+  },
+  {
+   "name": "Skinner v. Oklahoma",
+   "vol": 316,
+   "page": 535,
+   "year": 1942,
+   "cite": "316 U.S. 535"
+  },
+  {
+   "name": "Goldberg v. Kelly",
+   "vol": 397,
+   "page": 254,
+   "year": 1970,
+   "cite": "397 U.S. 254"
+  },
+  {
+   "name": "San Antonio Independent School District v. Rodriguez",
+   "vol": 411,
+   "page": 1,
+   "year": 1973,
+   "cite": "411 U.S. 1"
+  },
+  {
+   "name": "Richardson v. Ramirez",
+   "vol": 418,
+   "page": 24,
+   "year": 1974,
+   "cite": "418 U.S. 24"
+  },
+  {
+   "name": "Mathews v. Eldridge",
+   "vol": 424,
+   "page": 319,
+   "year": 1976,
+   "cite": "424 U.S. 319"
+  },
+  {
+   "name": "Cleveland Board of Education v. Loudermill",
+   "vol": 470,
+   "page": 532,
+   "year": 1985,
+   "cite": "470 U.S. 532"
+  },
+  {
+   "name": "Trump v. Anderson",
+   "vol": 601,
+   "page": 100,
+   "year": 2024,
+   "cite": "601 U.S. 100"
+  },
+  {
+   "name": "Marbury v. Madison",
+   "vol": 5,
+   "page": 137,
+   "year": 1803,
+   "cite": "5 U.S. 137"
+  },
+  {
+   "name": "Little v. Barreme",
+   "vol": 6,
+   "page": 170,
+   "year": 1804,
+   "cite": "6 U.S. 170"
+  },
+  {
+   "name": "United States v. Klein",
+   "vol": 80,
+   "page": 128,
+   "year": 1871,
+   "cite": "80 U.S. 128"
+  },
+  {
+   "name": "Chae Chan Ping v. United States",
+   "vol": 130,
+   "page": 581,
+   "year": 1889,
+   "cite": "130 U.S. 581"
+  },
+  {
+   "name": "Myers v. United States",
+   "vol": 272,
+   "page": 52,
+   "year": 1926,
+   "cite": "272 U.S. 52"
+  },
+  {
+   "name": "J. W. Hampton, Jr. &amp; Co. v. United States",
+   "vol": 276,
+   "page": 394,
+   "year": 1928,
+   "cite": "276 U.S. 394"
+  },
+  {
+   "name": "Springer v. Government of the Philippine Islands",
+   "vol": 277,
+   "page": 189,
+   "year": 1928,
+   "cite": "277 U.S. 189"
+  },
+  {
+   "name": "Humphrey's Executor v. United States",
+   "vol": 295,
+   "page": 602,
+   "year": 1935,
+   "cite": "295 U.S. 602"
+  },
+  {
+   "name": "Nixon v. General Services Administration",
+   "vol": 433,
+   "page": 425,
+   "year": 1977,
+   "cite": "433 U.S. 425"
+  },
+  {
+   "name": "Immigration and Naturalization Service v. Chadha",
+   "vol": 462,
+   "page": 919,
+   "year": 1983,
+   "cite": "462 U.S. 919"
+  },
+  {
+   "name": "Bowsher v. Synar",
+   "vol": 478,
+   "page": 714,
+   "year": 1986,
+   "cite": "478 U.S. 714"
+  },
+  {
+   "name": "Morrison v. Olson",
+   "vol": 487,
+   "page": 654,
+   "year": 1988,
+   "cite": "487 U.S. 654"
+  },
+  {
+   "name": "Plaut v. Spendthrift Farm, Inc.",
+   "vol": 514,
+   "page": 211,
+   "year": 1995,
+   "cite": "514 U.S. 211"
+  },
+  {
+   "name": "Clinton v. City of New York",
+   "vol": 524,
+   "page": 417,
+   "year": 1998,
+   "cite": "524 U.S. 417"
+  },
+  {
+   "name": "National Labor Relations Board v. Noel Canning",
+   "vol": 573,
+   "page": 513,
+   "year": 2014,
+   "cite": "573 U.S. 513"
+  },
+  {
+   "name": "Bank Markazi v. Peterson",
+   "vol": 578,
+   "page": 212,
+   "year": 2016,
+   "cite": "578 U.S. 212"
+  },
+  {
+   "name": "United States ex rel. Accardi v. Shaughnessy",
+   "vol": 347,
+   "page": 260,
+   "year": 1954,
+   "cite": "347 U.S. 260"
+  },
+  {
+   "name": "Citizens to Preserve Overton Park v. Volpe",
+   "vol": 401,
+   "page": 402,
+   "year": 1972,
+   "cite": "401 U.S. 402"
+  },
+  {
+   "name": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+   "vol": 467,
+   "page": 837,
+   "year": 1984,
+   "cite": "467 U.S. 837"
+  },
+  {
+   "name": "Auer v. Robbins",
+   "vol": 519,
+   "page": 452,
+   "year": 1997,
+   "cite": "519 U.S. 452"
+  },
+  {
+   "name": "Massachusetts v. Environmental Protection Agency",
+   "vol": 549,
+   "page": 497,
+   "year": 2007,
+   "cite": "549 U.S. 497"
+  },
+  {
+   "name": "Michigan v. Environmental Protection Agency",
+   "vol": 576,
+   "page": 743,
+   "year": 2015,
+   "cite": "576 U.S. 743"
+  },
+  {
+   "name": "West Virginia v. Environmental Protection Agency",
+   "vol": 596,
+   "page": 697,
+   "year": 2022,
+   "cite": "596 U.S. 697"
+  },
+  {
+   "name": "Youngstown Sheet &amp; Tube Co. v. Sawyer",
+   "vol": 343,
+   "page": 579,
+   "year": 1952,
+   "cite": "343 U.S. 579"
+  },
+  {
+   "name": "United States v. Nixon",
+   "vol": 418,
+   "page": 683,
+   "year": 1974,
+   "cite": "418 U.S. 683"
+  },
+  {
+   "name": "Harlow v. Fitzgerald",
+   "vol": 457,
+   "page": 800,
+   "year": 1982,
+   "cite": "457 U.S. 800"
+  },
+  {
+   "name": "Nixon v. Fitzgerald",
+   "vol": 457,
+   "page": 731,
+   "year": 1982,
+   "cite": "457 U.S. 731"
+  },
+  {
+   "name": "Clinton v. Jones",
+   "vol": 520,
+   "page": 681,
+   "year": 1997,
+   "cite": "520 U.S. 681"
+  },
+  {
+   "name": "Trump v. Mazars USA, LLP",
+   "vol": 591,
+   "page": 848,
+   "year": 2020,
+   "cite": "591 U.S. 848"
+  },
+  {
+   "name": "Trump v. Vance",
+   "vol": 591,
+   "page": 786,
+   "year": 2020,
+   "cite": "591 U.S. 786"
+  },
+  {
+   "name": "The Paquete Habana",
+   "vol": 175,
+   "page": 677,
+   "year": 1900,
+   "cite": "175 U.S. 677"
+  },
+  {
+   "name": "United States v. Curtiss-Wright Export Corp.",
+   "vol": 299,
+   "page": 304,
+   "year": 1936,
+   "cite": "299 U.S. 304"
+  },
+  {
+   "name": "Medellín v. Texas",
+   "vol": 552,
+   "page": 491,
+   "year": 2008,
+   "cite": "552 U.S. 491"
+  },
+  {
+   "name": "Zivotofsky v. Kerry",
+   "vol": 576,
+   "page": 1,
+   "year": 2015,
+   "cite": "576 U.S. 1"
+  },
+  {
+   "name": "Trump v. Hawaii",
+   "vol": 585,
+   "page": 667,
+   "year": 2018,
+   "cite": "585 U.S. 667"
+  },
+  {
+   "name": "Baker v. Carr",
+   "vol": 369,
+   "page": 186,
+   "year": 1962,
+   "cite": "369 U.S. 186"
+  },
+  {
+   "name": "Gray v. Sanders",
+   "vol": 372,
+   "page": 368,
+   "year": 1963,
+   "cite": "372 U.S. 368"
+  },
+  {
+   "name": "Wesberry v. Sanders",
+   "vol": 376,
+   "page": 1,
+   "year": 1964,
+   "cite": "376 U.S. 1"
+  },
+  {
+   "name": "Reynolds v. Sims",
+   "vol": 377,
+   "page": 533,
+   "year": 1964,
+   "cite": "377 U.S. 533"
+  },
+  {
+   "name": "Harper v. Virginia State Board of Elections",
+   "vol": 383,
+   "page": 663,
+   "year": 1966,
+   "cite": "383 U.S. 663"
+  },
+  {
+   "name": "Avery v. Midland County",
+   "vol": 390,
+   "page": 474,
+   "year": 1969,
+   "cite": "390 U.S. 474"
+  },
+  {
+   "name": "Shaw v. Reno",
+   "vol": 509,
+   "page": 630,
+   "year": 1993,
+   "cite": "509 U.S. 630"
+  },
+  {
+   "name": "Bush v. Gore",
+   "vol": 531,
+   "page": 98,
+   "year": 2000,
+   "cite": "531 U.S. 98"
+  },
+  {
+   "name": "Rucho v. Common Cause",
+   "vol": 588,
+   "page": 684,
+   "year": 2019,
+   "cite": "588 U.S. 684"
+  },
+  {
+   "name": "Chiafalo v. Washington",
+   "vol": 591,
+   "page": 578,
+   "year": 2020,
+   "cite": "591 U.S. 578"
+  },
+  {
+   "name": "Brnovich v. Democratic National Committee",
+   "vol": 594,
+   "page": 647,
+   "year": 2021,
+   "cite": "594 U.S. 647"
+  },
+  {
+   "name": "Pennsylvania Coal Co. v. Mahon",
+   "vol": 260,
+   "page": 393,
+   "year": 1922,
+   "cite": "260 U.S. 393"
+  },
+  {
+   "name": "United States v. Causby",
+   "vol": 328,
+   "page": 256,
+   "year": 1946,
+   "cite": "328 U.S. 256"
+  },
+  {
+   "name": "Berman v. Parker",
+   "vol": 348,
+   "page": 26,
+   "year": 1954,
+   "cite": "348 U.S. 26"
+  },
+  {
+   "name": "Penn Central Transportation Co. v. New York City",
+   "vol": 438,
+   "page": 104,
+   "year": 1978,
+   "cite": "438 U.S. 104"
+  },
+  {
+   "name": "Lucas v. South Carolina Coastal Council",
+   "vol": 503,
+   "page": 1003,
+   "year": 1992,
+   "cite": "503 U.S. 1003"
+  },
+  {
+   "name": "Dolan v. City of Tigard",
+   "vol": 512,
+   "page": 374,
+   "year": 1994,
+   "cite": "512 U.S. 374"
+  },
+  {
+   "name": "Lingle v. Chevron U.S.A. Inc.",
+   "vol": 544,
+   "page": 528,
+   "year": 2005,
+   "cite": "544 U.S. 528"
+  },
+  {
+   "name": "Kelo v. City of New London",
+   "vol": 545,
+   "page": 469,
+   "year": 2005,
+   "cite": "545 U.S. 469"
+  },
+  {
+   "name": "Laidlaw v. Organ",
+   "vol": 15,
+   "page": 178,
+   "year": 1817,
+   "cite": "15 U.S. 178"
+  },
+  {
+   "name": "Dartmouth College v. Woodward",
+   "vol": 17,
+   "page": 518,
+   "year": 1819,
+   "cite": "17 U.S. 518"
+  },
+  {
+   "name": "Lochner v. New York",
+   "vol": 198,
+   "page": 45,
+   "year": 1905,
+   "cite": "198 U.S. 45"
+  },
+  {
+   "name": "Hale v. Henkel",
+   "vol": 201,
+   "page": 43,
+   "year": 1906,
+   "cite": "201 U.S. 43"
+  },
+  {
+   "name": "Standard Oil Co. of New Jersey v. United States",
+   "vol": 221,
+   "page": 1,
+   "year": 1911,
+   "cite": "221 U.S. 1"
+  },
+  {
+   "name": "Federal Baseball Club of Baltimore v. National League of Professional Baseball Clubs",
+   "vol": 259,
+   "page": 200,
+   "year": 1922,
+   "cite": "259 U.S. 200"
+  },
+  {
+   "name": "West Coast Hotel Co. v. Parrish",
+   "vol": 300,
+   "page": 379,
+   "year": 1937,
+   "cite": "300 U.S. 379"
+  },
+  {
+   "name": "Gregory v. Helvering",
+   "vol": 293,
+   "page": 465,
+   "year": 1935,
+   "cite": "293 U.S. 465"
+  },
+  {
+   "name": "United States v. South-Eastern Underwriters Association",
+   "vol": 322,
+   "page": 533,
+   "year": 1944,
+   "cite": "322 U.S. 533"
+  },
+  {
+   "name": "United States v. Paramount Pictures, Inc.",
+   "vol": 334,
+   "page": 131,
+   "year": 1948,
+   "cite": "334 U.S. 131"
+  },
+  {
+   "name": "Prima Paint Corp. v. Flood &amp; Conklin Manufacturing Co.",
+   "vol": 388,
+   "page": 395,
+   "year": 1967,
+   "cite": "388 U.S. 395"
+  },
+  {
+   "name": "Southland Corp. v. Keating",
+   "vol": 465,
+   "page": 1,
+   "year": 1984,
+   "cite": "465 U.S. 1"
+  },
+  {
+   "name": "NCAA v. Board of Regents of the University of Oklahoma",
+   "vol": 468,
+   "page": 85,
+   "year": 1984,
+   "cite": "468 U.S. 85"
+  },
+  {
+   "name": "Mitsubishi Motors Corp. v. Soler Chrysler-Plymouth, Inc.",
+   "vol": 473,
+   "page": 614,
+   "year": 1985,
+   "cite": "473 U.S. 614"
+  },
+  {
+   "name": "AT&amp;T Mobility LLC v. Concepcion",
+   "vol": 563,
+   "page": 333,
+   "year": 2011,
+   "cite": "563 U.S. 333"
+  },
+  {
+   "name": "Wheaton v. Peters",
+   "vol": 33,
+   "page": 591,
+   "year": 1834,
+   "cite": "33 U.S. 591"
+  },
+  {
+   "name": "Burrow-Giles Lithographic Co. v. Sarony",
+   "vol": 111,
+   "page": 53,
+   "year": 1884,
+   "cite": "111 U.S. 53"
+  },
+  {
+   "name": "Bleistein v. Donaldson Lithographing Co.",
+   "vol": 188,
+   "page": 239,
+   "year": 1903,
+   "cite": "188 U.S. 239"
+  },
+  {
+   "name": "Diamond v. Chakrabarty",
+   "vol": 447,
+   "page": 303,
+   "year": 1980,
+   "cite": "447 U.S. 303"
+  },
+  {
+   "name": "Sony Corp. of America v. Universal City Studios, Inc.",
+   "vol": 464,
+   "page": 417,
+   "year": 1984,
+   "cite": "464 U.S. 417"
+  },
+  {
+   "name": "Harper &amp; Row v. Nation Enterprises",
+   "vol": 471,
+   "page": 539,
+   "year": 1985,
+   "cite": "471 U.S. 539"
+  },
+  {
+   "name": "Feist Publications, Inc. v. Rural Telephone Service Company, Inc.",
+   "vol": 499,
+   "page": 340,
+   "year": 1991,
+   "cite": "499 U.S. 340"
+  },
+  {
+   "name": "Campbell v. Acuff-Rose Music, Inc.",
+   "vol": 510,
+   "page": 569,
+   "year": 1994,
+   "cite": "510 U.S. 569"
+  },
+  {
+   "name": "Association for Molecular Pathology v. Myriad Genetics, Inc.",
+   "vol": 569,
+   "page": 576,
+   "year": 2013,
+   "cite": "569 U.S. 576"
+  },
+  {
+   "name": "Alice Corp. v. CLS Bank International",
+   "vol": 573,
+   "page": 208,
+   "year": 2014,
+   "cite": "573 U.S. 208"
+  },
+  {
+   "name": "Swift v. Tyson",
+   "vol": 41,
+   "page": 1,
+   "year": 1842,
+   "cite": "41 U.S. 1"
+  },
+  {
+   "name": "Luther v. Borden",
+   "vol": 48,
+   "page": 1,
+   "year": 1849,
+   "cite": "48 U.S. 1"
+  },
+  {
+   "name": "Selective Draft Law Cases",
+   "vol": 245,
+   "page": 366,
+   "year": 1918,
+   "cite": "245 U.S. 366"
+  },
+  {
+   "name": "Dillon v. Gloss",
+   "vol": 256,
+   "page": 368,
+   "year": 1921,
+   "cite": "256 U.S. 368"
+  },
+  {
+   "name": "Connally v. General Construction Co.",
+   "vol": 269,
+   "page": 385,
+   "year": 1926,
+   "cite": "269 U.S. 385"
+  },
+  {
+   "name": "Village of Euclid v. Ambler Realty Co.",
+   "vol": 272,
+   "page": 365,
+   "year": 1926,
+   "cite": "272 U.S. 365"
+  },
+  {
+   "name": "Erie Railroad Co. v. Tompkins",
+   "vol": 304,
+   "page": 64,
+   "year": 1938,
+   "cite": "304 U.S. 64"
+  },
+  {
+   "name": "Coleman v. Miller",
+   "vol": 307,
+   "page": 433,
+   "year": 1939,
+   "cite": "307 U.S. 433"
+  },
+  {
+   "name": "Burford v. Sun Oil Co.",
+   "vol": 319,
+   "page": 315,
+   "year": 1943,
+   "cite": "319 U.S. 315"
+  },
+  {
+   "name": "Gravel v. United States",
+   "vol": 408,
+   "page": 606,
+   "year": 1972,
+   "cite": "408 U.S. 606"
+  },
+  {
+   "name": "Colorado River Water Conservation District v. United States",
+   "vol": 424,
+   "page": 800,
+   "year": 1976,
+   "cite": "424 U.S. 800"
+  },
+  {
+   "name": "Anderson v. Liberty Lobby, Inc.",
+   "vol": 477,
+   "page": 242,
+   "year": 1986,
+   "cite": "477 U.S. 242"
+  },
+  {
+   "name": "Daubert v. Merrell Dow Pharmaceuticals",
+   "vol": 509,
+   "page": 579,
+   "year": 1993,
+   "cite": "509 U.S. 579"
+  }
+ ]
+}

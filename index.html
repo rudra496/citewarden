@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CiteWarden — AI citation integrity forensics</title>
+<meta name="description" content="Paste any text. CiteWarden extracts every citation and verifies it live against authoritative registries — or flags it as fabricated.">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1b2d'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%234ade80' font-family='Georgia'%3E§%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark">§</span>
+    <div>
+      <h1>CiteWarden</h1>
+      <p>AI citation integrity forensics · every claim checked, every fake flagged</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">How it works</a>
+    <a href="#mata">Case study</a>
+    <a href="docs/EVIDENCE.md" target="_blank" rel="noopener">Evidence log</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>AI can write. <em>CiteWarden verifies.</em></h2>
+    <p>Paste any text — a legal brief, an essay, an AI chatbot's answer. CiteWarden extracts every citation
+    and runs it through live registries (Crossref, OpenAlex, PubMed, eCFR), a 464-case verified landmark
+    database, and a forensic engine that catches impossible volumes, impossible years, and the exact
+    fabricated cases that got real lawyers sanctioned.</p>
+  </section>
+
+  <section class="workbench">
+    <div class="toolbar">
+      <button class="ghost" id="btnExampleFake">Load: sanctioned brief excerpt (real case)</button>
+      <button class="ghost" id="btnExampleReal">Load: genuine academic paragraph</button>
+      <button class="ghost" id="btnExampleEssay">Load: student essay with mixed citations</button>
+      <span class="spacer"></span>
+      <button class="primary" id="btnAnalyze">Check citations →</button>
+    </div>
+    <textarea id="input" rows="10" placeholder="Paste text here… up to ~20,000 characters." maxlength="20000"></textarea>
+    <div class="statusbar" id="status" hidden>
+      <div class="bar"><div id="progress"></div></div>
+      <span id="statusText">Checking…</span>
+    </div>
+  </section>
+
+  <section id="report" hidden>
+    <div class="scorecard">
+      <div class="dial" id="dial"><span id="scoreNum">—</span><small>integrity score</small></div>
+      <div class="counts">
+        <div class="count green"><b id="cGreen">0</b><span>verified</span></div>
+        <div class="count amber"><b id="cAmber">0</b><span>unverifiable</span></div>
+        <div class="count red"><b id="cRed">0</b><span>flagged</span></div>
+        <div class="count"><b id="cNotes">0</b><span>text notes</span></div>
+      </div>
+    </div>
+    <div id="notes"></div>
+    <div id="citations" class="citations"></div>
+    <p class="fineprint" id="verdictFine"></p>
+  </section>
+
+  <section class="split">
+    <article id="about">
+      <h3>How the forensics work</h3>
+      <ol>
+        <li><b>Extract</b> — 10 citation families recognized: DOIs, arXiv IDs, PMIDs, U.S. Code, CFR,
+        federal reporter cites, case names, UK acts, EU regulations &amp; directives.</li>
+        <li><b>Verify live</b> — DOIs resolve against Crossref then OpenAlex; arXiv IDs through their
+        registered DOI mirror; PMIDs against PubMed; CFR parts against the official eCFR.</li>
+        <li><b>Verify offline</b> — a 464-case landmark database (sourced at build time) catches exact
+        reporter-cite matches and name matches.</li>
+        <li><b>Forensic layer</b> — impossible volumes, reporters before their first publication year,
+        decision years that contradict the volume era, and a documented fabrication watchlist.</li>
+        <li><b>Score</b> — a transparent integrity score with a per-citation evidence trail. No black box.</li>
+      </ol>
+    </article>
+    <article id="mata">
+      <h3>The case study: <i>Mata v. Avianca</i></h3>
+      <p>In 2023, lawyers filed a brief full of ChatGPT-written citations. Six decisions did not exist.
+      Judge P. Kevin Castel sanctioned the lawyers and their firm <b>$5,000</b>
+      (<i>Mata v. Avianca, Inc.</i>, 678 F. Supp. 3d 443 (S.D.N.Y. 2023), order of June 22, 2023).
+      The exact six fabricated citations are in CiteWarden's watchlist — load the demo excerpt and watch
+      every one of them go red.</p>
+      <p class="fineprint">Sources verified at build time: the published order (Berkeley Law archive) and
+      CourtListener docket 63107798.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>CiteWarden · LexHack 2026 · Verdicts are advisory; a flagged citation means
+  <b>stop and check the primary source yourself</b>. Built with zero backend: your text never leaves your browser
+  except as read-only API queries to public registries.</p>
+</footer>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
