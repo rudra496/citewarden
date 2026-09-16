@@ -9,7 +9,7 @@ const RX = {
   cfr: /\b(\d{1,3})\s*C\.?\s*F\.?\s*R\.?\s*(?:§+\s*)?((?:\d+)(?:\.\d+)*)/g,
   usc: /\b(\d{1,2})\s*U\.?\s*S\.?\s*C\.?\s*(?:§+\s*)?((?:\d+)(?:\-\d+)?(?:\([a-z0-9]+\))*)/g,
   reporter: /\b(\d{1,4})\s+(U\.S\.|F\.3d|F\.2d|F\.|S\.\s?Ct\.|F\.\s?Supp\.(?:\s?2d|\s?3d)?)\s+(\d{1,5})\s*(?:\((\d{4})\))?/g,
-  caseName: /\b([A-Z][A-Za-z.'\u2019-]+(?:\s+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,3})\s+v(?:s)?\.\s+([A-Z][A-Za-z.'\u2019-]+(?:\s+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,3})/g,
+  caseName: /\b([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,4})\s+v(?:s)?\.\s+([A-Z][A-Za-z.'\u2019-]+(?:[,\s]+(?:of|the|de|[A-Z])[A-Za-z.'\u2019-]*){0,4})/g,
   ukAct: /\b([A-Z][A-Za-z'()&.-]+(?:\s+[A-Z][A-Za-z'()&.-]+){0,7})\s+(Act|Order|Regulations|Rules|Measure)\s+(\d{4})\b/g,
   euReg: /\bRegulation\s*\((EU|EC)\)\s*(\d{4})\/(\d{1,5})/g,
   euDirective: /\bDirective\s*(\d{2,4})\/(\d{1,3})\/(EC|EU)/g,

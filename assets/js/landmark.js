@@ -102,12 +102,16 @@ export function findLandmarkByName(name) {
 
 export function matchKnownFabricated(claimant, defendant) {
   const squash = (s) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
-  const c = squash(claimant), d = squash(defendant);
+  const user = squash(claimant + " v. " + defendant);
+  if (user.length < 6) return null;
   return (
     KNOWN_FABRICATED.find((f) => {
-      const m = f.name.match(/^(.*?)\s+v\.\s+(.*)$/);
-      if (!m) return false;
-      return squash(m[1]) === c && squash(m[2]) === d;
+      const w = squash(f.name);
+      if (w === user) return true;
+      // containment both ways so "Varghese v. China Southern Airlines Co" hits
+      // "…Co., Ltd." — but only with long-enough prefixes to stay honest
+      if (w.length >= 12 && user.length >= 12 && (w.includes(user) || user.includes(w))) return true;
+      return false;
     }) || null
   );
 }
