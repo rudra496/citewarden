@@ -1,5 +1,5 @@
 // CiteWarden service worker — cache-first for app shell, network-first for data.
-const CACHE = "citewarden-v2";
+const CACHE = "citewarden-v3";
 const SHELL = [
   "./",
   "index.html",
@@ -13,6 +13,7 @@ const SHELL = [
   "assets/js/patterns.js",
   "assets/js/verify.js",
   "assets/js/landmark.js",
+  "assets/js/selfaudit.js",
   "assets/js/data/landmarks.json",
   "assets/js/data/uk_eu_acts.json",
 ];

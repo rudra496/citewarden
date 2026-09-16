@@ -9,7 +9,17 @@ import {
 import {
   findLandmarkByCite, findLandmarkByName, findUKAct, findEUAct,
 } from "./landmark.js";
-import { verifyDoi, verifyArxiv, verifyPmid, verifyCfr, verifyUKAct } from "./verify.js";
+import { verifyDoi, verifyArxiv, verifyPmid, verifyCfr, verifyUKAct, verifyCaseCiteLive } from "./verify.js";
+
+// Optional CourtListener token (live case-law for ALL reporter cites).
+// Stored in localStorage by the UI; when absent, offline layers decide.
+let courtListenerToken = null;
+export function setCourtListenerToken(t) {
+  courtListenerToken = (t || "").trim() || null;
+}
+export function getCourtListenerToken() {
+  return courtListenerToken;
+}
 
 async function verifyOne(c) {
   switch (c.type) {
@@ -33,6 +43,19 @@ async function verifyOne(c) {
         return yearOk
           ? { verdict: "green", reason: "Exact match in the verified landmark database (464 cases, build-time sourced).", evidence: { title: hit.name, year: hit.year } }
           : { verdict: "red", reason: `Volume/page belong to ${hit.name} (${hit.year}), but the text says ${c.year}.`, evidence: { title: hit.name, year: hit.year } };
+      }
+      // live lookup (when a token is configured) resolves any other real cite
+      const live = await verifyCaseCiteLive(`${c.volume} ${c.reporter} ${c.page}`, courtListenerToken);
+      if (live) {
+        if (live.verdict === "green" && c.year != null && live.liveYear &&
+            Math.abs(c.year - live.liveYear) > 2) {
+          return {
+            verdict: "red",
+            reason: `The citation exists (${live.evidence.title}, ${live.liveYear}) but the text dates it to ${c.year}.`,
+            evidence: live.evidence,
+          };
+        }
+        return live;
       }
       return checkCaseCite(c); // bounds + era forensics decide
     }

@@ -1,5 +1,6 @@
-import { analyzeText } from "./analysis.js";
+import { analyzeText, setCourtListenerToken, getCourtListenerToken } from "./analysis.js";
 import { loadReferenceData, MATA_CASE_STUDY } from "./landmark.js";
+import { runSelfAudit } from "./selfaudit.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -9,7 +10,7 @@ In opposition, Plaintiff relies on well-established aviation-law precedents. In 
 
 const EXAMPLE_REAL = `Large language models now mediate access to legal and scientific information. The Transformer architecture introduced in "Attention Is All You Need" (arXiv 1706.03762) underlies this shift, and the risks are documented: Bender et al.'s stochastic parrots paper (DOI 10.1145/3442188.3445922) and the empirical hallucination literature (PMID 36218125) both warn against offloading judgment to fluent systems. Regulators have responded: Regulation (EU) 2022/2065 imposes transparency duties on platforms, and the Equality Act 2010 continues to govern discriminatory outcomes in the UK. In U.S. law, Brown v. Board of Education, 347 U.S. 483 (1954), remains the canonical statement that separate is inherently unequal, and agencies rulemaking under 21 C.F.R. § 820.75 must validate automated processes. Citizens United v. Federal Election Commission, 558 U.S. 310 (2010), protected political speech by corporations.`;
 
-const EXAMPLE_ESSAY = `The history of judicial review begins with Marbury v. Madison, 5 U.S. 137 (1803). Miranda v. Arizona, 384 U.S. 436 (1966), transformed police procedure by requiring warnings during custodial interrogation. Lochner v. New York, 198 U.S. 45 (1905), represents the substantive due process era. More recent scholarship (DOI 10.1017/S0003055422000946) analyzes the Court's legitimacy. On privacy, Katz v. United States, 389 U.S. 347 (1967), held that the Fourth Amendment protects people, not places. Studies show that public confidence tracks perceived neutrality. See also ter Ends: Judicial Review in Comparative Context, 88 Stat. 1234 (2025). Finally, Griswold v. Connecticut, 381 U.S. 479 (1965), established a right to privacy, and Texas v. Johnson, 491 U.S. 397 (1989), protected flag burning as speech under the First Amendment.`;
+const EXAMPLE_ESSAY = `The history of judicial review begins with Marbury v. Madison, 5 U.S. 137 (1803). Miranda v. Arizona, 384 U.S. 436 (1966), transformed police procedure by requiring warnings during custodial interrogation. Lochner v. New York, 198 U.S. 45 (1905), represents the substantive due process era. More recent scholarship (DOI 10.1017/S0003055422000946) analyzes the Court's legitimacy. On privacy, Katz v. United States, 389 U.S. 347 (1967), held that the Fourth Amendment protects people, not places. Studies show that public confidence tracks perceived neutrality. Finally, Griswold v. Connecticut, 381 U.S. 479 (1965), established a right to privacy, and Texas v. Johnson, 491 U.S. 397 (1989), protected flag burning as speech under the First Amendment.`;
 
 const verdictLabel = { green: "VERIFIED", amber: "UNVERIFIABLE", red: "FLAGGED" };
 
@@ -22,6 +23,14 @@ function el(tag, cls, html) {
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function kindLabel(t) {
+  return {
+    doi: "DOI", arxiv: "arXiv", pmid: "PubMed", cfr: "CFR", usc: "U.S. Code",
+    caseCite: "reporter cite", caseName: "case name", ukAct: "UK act",
+    euReg: "EU regulation", euDirective: "EU directive",
+  }[t] || t;
 }
 
 function cardFor(c) {
@@ -40,6 +49,7 @@ function cardFor(c) {
     if (c.evidence.cite) bits.push(esc(c.evidence.cite));
     if (c.evidence.container) bits.push(esc(c.evidence.container));
     ev.innerHTML = bits.join(" · ");
+    if (c.evidence.abstract) ev.appendChild(el("div", "abstract", esc(c.evidence.abstract)));
     const link = c.evidence.url;
     if (link) {
       const a = el("a", "evlink", "open source ↗");
@@ -54,20 +64,49 @@ function cardFor(c) {
   return card;
 }
 
-function kindLabel(t) {
-  return {
-    doi: "DOI", arxiv: "arXiv", pmid: "PubMed", cfr: "CFR", usc: "U.S. Code",
-    caseCite: "reporter cite", caseName: "case name", ukAct: "UK act",
-    euReg: "EU regulation", euDirective: "EU directive",
-  }[t] || t;
-}
-
 function noteRow(n) {
   return el("div", `note ${n.severity}`, esc(n.note));
 }
 
-async function run() {
-  const text = $("input").value.trim();
+// Inline-highlight the ORIGINAL text with per-citation verdict colors.
+function renderHighlighted(text, citations) {
+  const box = $("highlighted");
+  box.innerHTML = "";
+  const spans = citations
+    .filter((c) => typeof c.index === "number" && c.verdict !== "amber")
+    .sort((a, b) => b.index - a.index);
+  const frag = document.createDocumentFragment();
+  let cursor = text.length;
+  for (const c of spans) {
+    const end = Math.min(text.length, c.index + Math.max(c.raw.length, 1));
+    if (end > cursor) continue;
+    frag.insertBefore(document.createTextNode(text.slice(end, cursor)), frag.firstChild);
+    const mark = document.createElement("mark");
+    mark.className = "hl " + c.verdict;
+    mark.textContent = text.slice(c.index, end);
+    mark.title = `${verdictLabel[c.verdict]} — ${c.reason}`;
+    frag.insertBefore(mark, frag.firstChild);
+    cursor = c.index;
+  }
+  frag.insertBefore(document.createTextNode(text.slice(0, cursor)), frag.firstChild);
+  box.appendChild(frag);
+  $("highlightWrap").hidden = false;
+}
+
+// ---- permalink (shareable report: text encoded in the URL hash) ----
+function encodeShare(text) {
+  return "#" + btoa(unescape(encodeURIComponent(text))).replace(/\+/g, "-").replace(/\//g, "_");
+}
+function decodeShare(hash) {
+  try {
+    return decodeURIComponent(escape(atob(hash.slice(1).replace(/-/g, "+").replace(/_/g, "/"))));
+  } catch {
+    return null;
+  }
+}
+
+async function run(textOverride) {
+  const text = (textOverride ?? $("input").value).trim();
   if (!text) { $("input").focus(); return; }
   $("status").hidden = false;
   $("report").hidden = true;
@@ -116,20 +155,83 @@ async function run() {
   if (!result.citations.length && !result.notes.length) {
     box.appendChild(el("p", "fineprint", "No recognizable citations found. CiteWarden judges citations, not general claims."));
   }
+  const tok = getCourtListenerToken() ? " · live case-law: ON (CourtListener)" : " · live case-law: landmark DB + forensics";
   $("verdictFine").textContent =
-    `Checked ${result.citations.length} citation${result.citations.length === 1 ? "" : "s"} at ${new Date(result.checkedAt).toLocaleTimeString()}. ` +
+    `Checked ${result.citations.length} citation${result.citations.length === 1 ? "" : "s"} at ${new Date(result.checkedAt).toLocaleTimeString()}${tok}. ` +
     `Green = matched a live registry or the verified database. Amber = well-formed but unverifiable. Red = forensic violation, watchlist hit, or registry confirms non-existence.`;
+
+  renderHighlighted(text, result.citations);
+  history.replaceState(null, "", encodeShare(text) + "#r");
   $("report").hidden = false;
-  $("report").scrollIntoView({ behavior: "smooth", block: "nearest" });
+  $("shareBtn").hidden = false;
+  $("printBtn").hidden = false;
 }
 
-$("btnAnalyze").addEventListener("click", run);
+async function showAudit() {
+  const { stats, rows } = await runSelfAudit();
+  $("auditSummary").innerHTML =
+    `<b>${stats.accuracy}% correct</b> on ${stats.total} labeled fixtures — ` +
+    `${stats.green.correct}/${stats.green.correct + stats.green.missed} real citations accepted, ` +
+    `${stats.red.correct}/${stats.red.correct + stats.red.missed} fabrications caught. ` +
+    `Runs entirely in your browser, every page load, against the same engine that scores your text.`;
+  const tbl = $("auditTable");
+  tbl.innerHTML = "";
+  for (const r of rows) {
+    const tr = el("tr", r.ok ? "ok" : "bad");
+    tr.innerHTML = `<td>${esc(r.text)}…</td><td><span class="badge ${r.expect}">${r.expect.toUpperCase()}</span></td><td>${r.ok ? "✓" : "✗ saw " + esc(r.saw)}</td><td class="why">${esc(r.why)}</td>`;
+    tbl.appendChild(tr);
+  }
+  $("audit").hidden = false;
+  $("audit").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// ---- boot ----
+$("btnAnalyze").addEventListener("click", () => run());
 $("btnExampleFake").addEventListener("click", () => { $("input").value = EXAMPLE_FAKE; });
 $("btnExampleReal").addEventListener("click", () => { $("input").value = EXAMPLE_REAL; });
 $("btnExampleEssay").addEventListener("click", () => { $("input").value = EXAMPLE_ESSAY; });
+$("btnAudit").addEventListener("click", showAudit);
+$("printBtn").addEventListener("click", () => window.print());
+$("shareBtn").addEventListener("click", async () => {
+  const url = location.href;
+  try {
+    await navigator.clipboard.writeText(url);
+    $("shareBtn").textContent = "Link copied ✓";
+    setTimeout(() => ($("shareBtn").textContent = "Copy shareable link"), 1600);
+  } catch {
+    prompt("Share this report:", url);
+  }
+});
+$("tokenBtn").addEventListener("click", () => {
+  const cur = getCourtListenerToken() || "";
+  const t = prompt(
+    "CourtListener API token (free at courtlistener.com → Account → API). Enables LIVE verification of ANY reporter cite. Leave empty to disable.",
+    cur
+  );
+  if (t === null) return;
+  setCourtListenerToken(t);
+  localStorage.setItem("cw_cl_token", t);
+  updateTokenUi();
+});
+function updateTokenUi() {
+  const on = !!getCourtListenerToken();
+  $("tokenState").textContent = on ? "live case-law: ON" : "live case-law: landmark DB + forensics";
+}
 $("input").addEventListener("keydown", (e) => {
   if ((e.metaKey || e.ctrlKey) && e.key === "Enter") run();
 });
+
+const saved = localStorage.getItem("cw_cl_token");
+if (saved) setCourtListenerToken(saved);
+updateTokenUi();
+
+const shared = location.hash.startsWith("#") && location.hash.length > 8 && !location.hash.startsWith("#r=")
+  ? decodeShare(location.hash.split("#r")[0] || location.hash)
+  : null;
+if (shared && shared.length > 20) {
+  $("input").value = shared;
+  loadReferenceData().then(() => run(shared)).catch(() => {});
+}
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));

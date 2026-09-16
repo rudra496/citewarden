@@ -9,11 +9,11 @@
 
 const TIMEOUT_MS = 12000;
 
-async function fetchJson(url) {
+async function fetchJson(url, headers = {}) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
   try {
-    const r = await fetch(url, { signal: ctrl.signal, headers: { Accept: "application/json" } });
+    const r = await fetch(url, { signal: ctrl.signal, headers: { Accept: "application/json", ...headers } });
     if (!r.ok) return { ok: false, status: r.status };
     return { ok: true, status: r.status, data: await r.json() };
   } catch (e) {
@@ -23,16 +23,28 @@ async function fetchJson(url) {
   }
 }
 
+function abstractFromOpenAlex(w) {
+  if (!w?.abstract_inverted_index) return null;
+  const pos = new Map();
+  for (const [word, idxs] of Object.entries(w.abstract_inverted_index)) {
+    for (const i of idxs) pos.set(i, word);
+  }
+  const words = [...pos.entries()].sort((a, b) => a[0] - b[0]).map(([, wd]) => wd);
+  const s = words.join(" ");
+  return s.length > 320 ? s.slice(0, 317) + "…" : s;
+}
+
 // --- DOI → Crossref (primary), OpenAlex (fallback) ---
 export async function verifyDoi(doi) {
   const cr = await fetchJson(`https://api.crossref.org/works/${encodeURIComponent(doi)}`);
   if (cr.ok && cr.data?.status === "ok") {
     const m = cr.data.message;
     const year = m.issued?.["date-parts"]?.[0]?.[0];
+    const abstract = m.abstract ? String(m.abstract).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 320) : null;
     return {
       verdict: "green",
       reason: "Registered with Crossref (publisher-deposited metadata).",
-      evidence: { title: m.title?.[0], year, container: m["container-title"]?.[0], url: m.URL || `https://doi.org/${doi}` },
+      evidence: { title: m.title?.[0], year, container: m["container-title"]?.[0], url: m.URL || `https://doi.org/${doi}`, abstract },
     };
   }
   const oa = await fetchJson(`https://api.openalex.org/works/doi:${doi}`);
@@ -40,7 +52,7 @@ export async function verifyDoi(doi) {
     return {
       verdict: "green",
       reason: "Indexed in OpenAlex (scholarly record).",
-      evidence: { title: oa.data.title, year: oa.data.publication_year, url: `https://doi.org/${doi}` },
+      evidence: { title: oa.data.title, year: oa.data.publication_year, url: `https://doi.org/${doi}`, abstract: abstractFromOpenAlex(oa.data) },
     };
   }
   if (cr.status === 404 && oa.status === 404) {
@@ -157,6 +169,43 @@ export async function verifyUKAct(name, year, wikiUrl) {
     return { verdict: "red", reason: `No record found for "${title}".` };
   }
   return { verdict: "amber", reason: "Lookup unreachable; format is valid." };
+}
+
+// --- CourtListener live case lookup (optional free token) ---
+// The citation-lookup endpoint resolves ANY reporter cite to its real case.
+// Without a token the endpoint 401s; callers fall back to forensics + DB.
+export async function verifyCaseCiteLive(cite, token) {
+  if (!token) return null;
+  const r = await fetchJson(
+    `https://www.courtlistener.com/api/rest/v4/citation-lookup/?citation=${encodeURIComponent(cite)}`,
+    { Authorization: `Token ${token}` }
+  );
+  if (r.ok && Array.isArray(r.data) && r.data.length) {
+    const m = r.data[0];
+    const meta = m.cite || m.meta || {};
+    const name = meta.caseName || m.caseName || "";
+    const year = meta.decisionYear || (meta.decisionDate ? String(meta.decisionDate).slice(0, 4) : undefined);
+    if (name) {
+      return {
+        verdict: "green",
+        reason: "Resolved live in the CourtListener case-law database (free.law).",
+        evidence: {
+          title: name,
+          year,
+          url: meta.docketId ? `https://www.courtlistener.com/docket/${meta.docketId}/` : "https://www.courtlistener.com/",
+        },
+        liveYear: year ? Number(year) : undefined,
+      };
+    }
+  }
+  if (r.ok && Array.isArray(r.data) && r.data.length === 0) {
+    return {
+      verdict: "red",
+      reason: "CourtListener's live database contains no such reporter citation.",
+      evidence: { url: "https://www.courtlistener.com/" },
+    };
+  }
+  return null; // unreachable or token invalid → fall back silently
 }
 
 export async function verifyAll(citations, helpers, concurrency = 4) {

@@ -22,6 +22,7 @@
   <nav>
     <a href="#about">How it works</a>
     <a href="#mata">Case study</a>
+    <button class="linklike" id="btnAudit">Self-audit</button>
     <a href="docs/EVIDENCE.md" target="_blank" rel="noopener">Evidence log</a>
   </nav>
 </header>
@@ -41,6 +42,7 @@
       <button class="ghost" id="btnExampleReal">Load: genuine academic paragraph</button>
       <button class="ghost" id="btnExampleEssay">Load: student essay with mixed citations</button>
       <span class="spacer"></span>
+      <button class="ghost" id="tokenBtn" title="Optional: free CourtListener token enables live verification of ANY reporter cite">⚙ <span id="tokenState">live case-law: landmark DB + forensics</span></button>
       <button class="primary" id="btnAnalyze">Check citations →</button>
     </div>
     <textarea id="input" rows="10" placeholder="Paste text here… up to ~20,000 characters." maxlength="20000"></textarea>
@@ -59,10 +61,27 @@
         <div class="count red"><b id="cRed">0</b><span>flagged</span></div>
         <div class="count"><b id="cNotes">0</b><span>text notes</span></div>
       </div>
+      <div class="report-actions">
+        <button id="shareBtn" hidden>Copy shareable link</button>
+        <button id="printBtn" hidden>Print / PDF</button>
+      </div>
     </div>
     <div id="notes"></div>
+    <div id="highlightWrap" hidden>
+      <h3 class="sect">The text, as CiteWarden read it</h3>
+      <div id="highlighted" class="highlighted"></div>
+    </div>
     <div id="citations" class="citations"></div>
     <p class="fineprint" id="verdictFine"></p>
+  </section>
+
+  <section id="audit" hidden class="audit">
+    <h3 class="sect">Self-audit — the engine, graded live</h3>
+    <p id="auditSummary" class="fineprint"></p>
+    <table class="audit-table">
+      <thead><tr><th>Fixture text</th><th>Must</th><th>Engine</th><td class="why">Ground truth</td></tr></thead>
+      <tbody id="auditTable"></tbody>
+    </table>
   </section>
 
   <section class="split">
