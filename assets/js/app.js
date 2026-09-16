@@ -49,6 +49,9 @@ function cardFor(c) {
     if (c.evidence.cite) bits.push(esc(c.evidence.cite));
     if (c.evidence.container) bits.push(esc(c.evidence.container));
     ev.innerHTML = bits.join(" · ");
+    if (c.evidence.plain) {
+      ev.appendChild(el("div", "plain", `<b>In plain language:</b> ${esc(c.evidence.plain)} <span class="plainsrc">(live encyclopedic summary)</span>`));
+    }
     if (c.evidence.abstract) ev.appendChild(el("div", "abstract", esc(c.evidence.abstract)));
     const link = c.evidence.url;
     if (link) {

@@ -171,6 +171,22 @@ export async function verifyUKAct(name, year, wikiUrl) {
   return { verdict: "amber", reason: "Lookup unreachable; format is valid." };
 }
 
+// --- Plain-language explanation for verified cases (live encyclopedic summary) ---
+export async function fetchPlainSummary(articleTitle) {
+  const r = await fetchJson(
+    `https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=extracts&exintro=1&explaintext=1&titles=${encodeURIComponent(articleTitle)}`
+  );
+  if (r.ok && r.data?.query) {
+    const pages = Object.values(r.data.query.pages);
+    const extract = pages[0]?.extract;
+    if (extract && extract.length > 60) {
+      const s = extract.replace(/\s+/g, " ").trim();
+      return s.length > 380 ? s.slice(0, 377) + "…" : s;
+    }
+  }
+  return null;
+}
+
 // --- CourtListener live case lookup (optional free token) ---
 // The citation-lookup endpoint resolves ANY reporter cite to its real case.
 // Without a token the endpoint 401s; callers fall back to forensics + DB.

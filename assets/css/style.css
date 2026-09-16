@@ -153,3 +153,7 @@ button.linklike:hover { color: var(--text); }
 }
 
 footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 18px 24px; color: var(--muted); font-size: 13px; }
+
+.evidence .plain { width: 100%; color: #b9c8de; font-size: 13px; border-left: 3px solid var(--green); padding: 6px 10px; margin-top: 6px; background: rgba(52, 211, 153, 0.05); border-radius: 0 6px 6px 0; }
+.evidence .plain b { color: var(--green); }
+.evidence .plainsrc { color: var(--muted); font-size: 11.5px; }

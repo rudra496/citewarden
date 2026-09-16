@@ -9,7 +9,7 @@ import {
 import {
   findLandmarkByCite, findLandmarkByName, findUKAct, findEUAct,
 } from "./landmark.js";
-import { verifyDoi, verifyArxiv, verifyPmid, verifyCfr, verifyUKAct, verifyCaseCiteLive } from "./verify.js";
+import { verifyDoi, verifyArxiv, verifyPmid, verifyCfr, verifyUKAct, verifyCaseCiteLive, fetchPlainSummary } from "./verify.js";
 
 // Optional CourtListener token (live case-law for ALL reporter cites).
 // Stored in localStorage by the UI; when absent, offline layers decide.
@@ -40,9 +40,17 @@ async function verifyOne(c) {
       const hit = findLandmarkByCite(c.volume, c.page);
       if (hit) {
         const yearOk = c.year == null || Math.abs(c.year - hit.year) <= 1;
-        return yearOk
-          ? { verdict: "green", reason: "Exact match in the verified landmark database (464 cases, build-time sourced).", evidence: { title: hit.name, year: hit.year } }
-          : { verdict: "red", reason: `Volume/page belong to ${hit.name} (${hit.year}), but the text says ${c.year}.`, evidence: { title: hit.name, year: hit.year } };
+        if (!yearOk) {
+          return { verdict: "red", reason: `Volume/page belong to ${hit.name} (${hit.year}), but the text says ${c.year}.`, evidence: { title: hit.name, year: hit.year } };
+        }
+        // verified landmark: enrich with a live plain-language summary so
+        // citizens learn what the cited case is actually about
+        const plain = await fetchPlainSummary(hit.name);
+        return {
+          verdict: "green",
+          reason: "Exact match in the verified landmark database (464 cases, build-time sourced).",
+          evidence: { title: hit.name, year: hit.year, plain },
+        };
       }
       // live lookup (when a token is configured) resolves any other real cite
       const live = await verifyCaseCiteLive(`${c.volume} ${c.reporter} ${c.page}`, courtListenerToken);
@@ -63,7 +71,10 @@ async function verifyOne(c) {
       const forensic = checkCaseName(c);
       if (forensic) return { verdict: "red", reason: forensic.reason, watch: forensic.watch };
       const hit = findLandmarkByName(`${c.claimant} v. ${c.defendant}`);
-      if (hit) return { verdict: "green", reason: `Matches verified landmark case: ${hit.name} (${hit.cite}, ${hit.year}).`, evidence: { title: hit.name, cite: hit.cite, year: hit.year } };
+      if (hit) {
+        const plain = await fetchPlainSummary(hit.name);
+        return { verdict: "green", reason: `Matches verified landmark case: ${hit.name} (${hit.cite}, ${hit.year}).`, evidence: { title: hit.name, cite: hit.cite, year: hit.year, plain } };
+      }
       return null; // name-only citations are too weak to judge — mark unjudged
     }
     case "euReg":
