@@ -119,11 +119,12 @@ export function matchKnownFabricated(claimant, defendant) {
 export function findUKAct(name, year, kind) {
   if (!_ukEu) return null;
   const n = norm(name);
-  const withKind = (a) => norm(`${a.name} ${kind || "Act"}`);
+  // extracted names omit the kind word ("Equality" for "Equality Act 2010")
+  const withoutKind = (s) => norm(s).replace(/\s+(act|order|regulations|rules|measure)$/, "");
   return (
     _ukEu.uk.find((a) => norm(a.name) === n && a.year === year) ||
     _ukEu.uk.find((a) => norm(a.name) === n) ||
-    _ukEu.uk.find((a) => withKind(a) === n) ||
+    _ukEu.uk.find((a) => withoutKind(a.name) === n) ||
     null
   );
 }
